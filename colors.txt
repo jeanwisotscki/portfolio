@@ -3,5 +3,7 @@ roxo: #b93bf4
 azul: #2647f4
 vermelho: #f43b3b
 branco: #fffcfc
+
+
 background-azul:  #0d0f39
 background-preto:  #01010d
