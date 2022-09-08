@@ -6,7 +6,6 @@ import { Title } from "./styles";
 const Home: NextPage = () => {
   return (
     <div>
-      <Title>olá</Title>
       <Header />
     </div>
   );

@@ -1,9 +1,15 @@
-import { HeaderContainer } from "./styles";
+import { Logo } from "./components/Logo";
+import { Navbar } from "./components/Navbar";
+
+import { ContentContainer, HeaderContainer } from "./styles";
 
 export const Header = () => {
   return (
     <HeaderContainer>
-      <h1>olá</h1>
+      <ContentContainer>
+        <Logo />
+        <Navbar />
+      </ContentContainer>
     </HeaderContainer>
   );
 };
