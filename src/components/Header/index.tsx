@@ -18,12 +18,7 @@ export const Header = () => {
         <Logo />
 
         {isMobile ? (
-          <>
-            <MenuMobile menuIsOpen={menuIsOpen} />
-            <Hamburger onClick={() => setMenuIsOpen((prevValue) => !prevValue)}>
-              toggle
-            </Hamburger>
-          </>
+          <MenuMobile menuIsOpen={menuIsOpen} setMenuIsOpen={setMenuIsOpen} />
         ) : (
           <Navbar />
         )}

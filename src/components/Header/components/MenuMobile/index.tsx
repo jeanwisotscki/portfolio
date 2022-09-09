@@ -5,11 +5,16 @@ import { Container } from "./styles";
 
 interface MenuMobileProps {
   menuIsOpen: boolean;
+  setMenuIsOpen: Dispatch<SetStateAction<boolean>>;
 }
 
 export const MenuMobile = (props: MenuMobileProps) => {
   return (
     <Container>
+      <button onClick={() => props.setMenuIsOpen((prevValue) => !prevValue)}>
+        toggle
+      </button>
+
       {props.menuIsOpen && (
         <nav style={{ color: "#fff " }}>
           <Link href="/">
