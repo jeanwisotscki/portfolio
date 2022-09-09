@@ -20,8 +20,4 @@ export const Hamburger = styled.button`
   padding: 0 0.5rem;
   border: none;
   outline: none;
-
-  @media (min-width: 769px) {
-    display: none;
-  }
 `;
