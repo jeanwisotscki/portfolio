@@ -1,14 +1,12 @@
 import type { NextPage } from "next";
-import { Header } from "../components/Header";
 
-import { Espace, Title } from "./styles";
+import { LayoutBase } from "../components/LayoutBase";
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <Header />
-      <Espace />
-    </div>
+    <LayoutBase>
+      <h1>página home</h1>
+    </LayoutBase>
   );
 };
 
