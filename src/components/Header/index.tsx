@@ -1,12 +1,12 @@
 import React from "react";
 
 import { Logo } from "./components/Logo";
-import { MenuMobile } from "./components/MenuMobile";
 import { Navbar } from "./components/Navbar";
+import { MenuMobile } from "./components/MenuMobile";
 
 import { useMediaScreen } from "../../hooks/useMediaScreen";
 
-import { ContentContainer, Hamburger, HeaderContainer } from "./styles";
+import { ContentContainer, HeaderContainer } from "./styles";
 
 export const Header = () => {
   const isMobile = useMediaScreen("(max-width: 769px)");
