@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  color: #fff;
+  color: ${(props) => props.theme.colors.lightBlue};
   height: 80vh;
   display: flex;
   align-items: center;
