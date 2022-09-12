@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  background-color: #0d0f39;
+  background-color: ${(props) => props.theme.colors.bgDarkBlue};
   padding: 0 2rem;
 `;
 
@@ -15,7 +15,7 @@ export const ContentContainer = styled.div`
 
 export const Hamburger = styled.button`
   background: none;
-  color: #fff;
+  color: ${(props) => props.theme.colors.red};
   font-size: 2rem;
   padding: 0 0.5rem;
   border: none;

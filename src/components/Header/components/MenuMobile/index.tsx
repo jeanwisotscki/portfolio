@@ -54,7 +54,7 @@ export const MenuMobile = (props: MenuMobileProps) => {
       </button>
 
       {props.menuIsOpen && (
-        <nav style={{ color: "#fff " }}>
+        <nav>
           <ul onClick={() => props.setMenuIsOpen((prevValue) => !prevValue)}>
             <li>
               <Link href="/">

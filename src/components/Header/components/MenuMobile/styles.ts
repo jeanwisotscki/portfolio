@@ -7,15 +7,15 @@ export const Container = styled.div`
   button {
     width: 30px;
     height: 30px;
-    color: #fff;
+    color: ${(props) => props.theme.colors.lightBlue};
     background: none;
     border: none;
     z-index: 5;
   }
 
   nav {
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(10px);
+    background-color: ${(props) => props.theme.colors.bgDarkBlue};
+    color: ${(props) => props.theme.colors.white};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +29,7 @@ export const Container = styled.div`
     ul li a {
       display: block;
       font-weight: bold;
-      border-bottom: 2px solid #24f3ef;
+      border-bottom: 2px solid ${(props) => props.theme.colors.green};
       padding: 1rem 3rem;
     }
   }
