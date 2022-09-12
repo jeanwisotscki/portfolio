@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
-export const Title = styled.h1`
-  color: blue;
-`;
+export const Container = styled.div`
+  color: #fff;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-export const Espace = styled.div`
-  height: 300vh;
-  background-color: yellow;
+  div {
+    margin-left: 2rem;
+  }
 `;

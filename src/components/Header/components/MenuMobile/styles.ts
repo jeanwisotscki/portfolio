@@ -14,7 +14,8 @@ export const Container = styled.div`
   }
 
   nav {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,6 +24,7 @@ export const Container = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1;
 
     ul li a {
       display: block;
