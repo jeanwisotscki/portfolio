@@ -12,12 +12,12 @@ export const Navbar = () => {
         </NavLi>
 
         <NavLi>
-          <Link href="/">
+          <Link href="/projetos">
             <a>Projetos</a>
           </Link>
         </NavLi>
         <NavLi>
-          <Link href="/">
+          <Link href="/sobre">
             <a>Sobre</a>
           </Link>
         </NavLi>
