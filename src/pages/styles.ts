@@ -31,6 +31,14 @@ export const TextWrapper = styled.div`
     font-size: ${(props) => props.theme.fontSizes.large};
   }
 
+  h2::after {
+    content: "";
+    width: 200px;
+    height: 3px;
+    display: block;
+    background-color: ${(props) => props.theme.colors.green};
+  }
+
   @media (max-width: 769px) {
     min-width: 100%;
     margin-top: 2rem;
@@ -38,6 +46,11 @@ export const TextWrapper = styled.div`
 
     h1 {
       font-size: ${(props) => props.theme.fontSizes.medium};
+    }
+
+    h2::after {
+      display: block;
+      margin: 0 auto;
     }
   }
 `;
