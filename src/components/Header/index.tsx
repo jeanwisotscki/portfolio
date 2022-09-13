@@ -4,13 +4,26 @@ import { Logo } from "./components/Logo";
 import { Navbar } from "./components/Navbar";
 import { MenuMobile } from "./components/MenuMobile";
 
-import { useMediaScreen } from "../../hooks/useMediaScreen";
+import { useMediaQuery } from "../../hooks/useMediaQuery";
 
 import { ContentContainer, HeaderContainer } from "./styles";
 
 export const Header = () => {
-  const isMobile = useMediaScreen("(max-width: 769px)");
+  const mediaIsMatched = useMediaQuery("(max-width: 769px)");
+
   const [menuIsOpen, setMenuIsOpen] = React.useState(false);
+  const [isMobile, setIsMobile] = React.useState<boolean | null>(null);
+
+  React.useEffect(() => {
+    const screenWidth = window.innerWidth;
+
+    if (mediaIsMatched || screenWidth <= 769) {
+      setIsMobile(true);
+      return;
+    }
+
+    setIsMobile(false);
+  }, [mediaIsMatched]);
 
   return (
     <HeaderContainer>

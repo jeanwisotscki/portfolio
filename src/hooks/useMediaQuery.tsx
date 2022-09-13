@@ -1,6 +1,6 @@
 import React from "react";
 
-export const useMediaScreen = (media: string) => {
+export const useMediaQuery = (media: string) => {
   const [match, setMatch] = React.useState<boolean | null>(null);
 
   React.useEffect(() => {
