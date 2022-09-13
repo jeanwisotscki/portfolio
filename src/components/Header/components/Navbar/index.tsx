@@ -22,7 +22,7 @@ export const Navbar = () => {
           </Link>
         </NavLi>
         <NavLi>
-          <Link href="/">
+          <Link href="/contato">
             <a>Contato</a>
           </Link>
         </NavLi>
