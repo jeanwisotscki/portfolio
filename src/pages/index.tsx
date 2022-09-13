@@ -3,22 +3,24 @@ import type { NextPage } from "next";
 
 import { LayoutBase } from "../components/LayoutBase";
 
-import { Container } from "./styles";
+import { Container, ImgWrapper, TextWrapper } from "./styles";
 
 const Home: NextPage = () => {
   return (
     <LayoutBase>
       <Container>
-        <Image
-          src="/home-decoration.svg"
-          width={250}
-          height={250}
-          alt="decoration"
-        />
-        <div>
+        <ImgWrapper>
+          <Image
+            src="/home-decoration.svg"
+            width={250}
+            height={250}
+            alt="decoration"
+          />
+        </ImgWrapper>
+        <TextWrapper>
           <h1>Bem vindos</h1>
           <h2>ao meu portfólio</h2>
-        </div>
+        </TextWrapper>
       </Container>
     </LayoutBase>
   );
