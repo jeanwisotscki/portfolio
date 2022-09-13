@@ -12,12 +12,3 @@ export const ContentContainer = styled.div`
   justify-content: space-between;
   margin: 0 auto;
 `;
-
-export const Hamburger = styled.button`
-  background: none;
-  color: ${(props) => props.theme.colors.red};
-  font-size: 2rem;
-  padding: 0 0.5rem;
-  border: none;
-  outline: none;
-`;
