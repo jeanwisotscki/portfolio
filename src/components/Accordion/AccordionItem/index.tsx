@@ -1,5 +1,50 @@
 import React from "react";
-import { Answer, Question, Wrapper } from "./styles";
+
+import {
+  Answer,
+  Question,
+  Container,
+  QuestionWrapper,
+  IconWrapper,
+} from "./styles";
+
+const ArrowDownIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+      />
+    </svg>
+  );
+};
+
+const ArrowUpIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5"
+      />
+    </svg>
+  );
+};
 
 interface AccordionItemProps {
   question: string;
@@ -8,19 +53,28 @@ interface AccordionItemProps {
 }
 
 export const AccordionItem = (props: AccordionItemProps) => {
-  const [isActive, setIsActive] = React.useState<null | number>(null);
+  const [showAnswer, setShowAnswer] = React.useState<null | number>(null);
 
   const toggle = (index: number) => {
     // esconde a resposta, caso ela esteja visível
-    if (isActive === index) return setIsActive(null);
+    if (showAnswer === index) return setShowAnswer(null);
 
-    setIsActive(index);
+    setShowAnswer(index);
   };
 
   return (
-    <Wrapper>
-      <Question onClick={() => toggle(props.index)}>{props.question}</Question>
-      {isActive === props.index ? <Answer>{props.answer}</Answer> : null}
-    </Wrapper>
+    <Container>
+      <QuestionWrapper onClick={() => toggle(props.index)}>
+        <Question>{props.question}</Question>
+        <IconWrapper>
+          {showAnswer !== null && showAnswer >= 0 ? (
+            <ArrowUpIcon />
+          ) : (
+            <ArrowDownIcon />
+          )}
+        </IconWrapper>
+      </QuestionWrapper>
+      {showAnswer === props.index ? <Answer>{props.answer}</Answer> : null}
+    </Container>
   );
 };
