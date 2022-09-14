@@ -1,14 +1,16 @@
 export const data = [
   {
-    question: "pergunta numero 1",
-    answer: "reposta numero 1",
+    question: "Antes de tudo",
+    answer:
+      "Meu nome é Jean Wisotscki, tenho 26 anos e atualmente vivo em Santa Catarina.",
   },
   {
-    question: "pergunta numero 2",
-    answer: "reposta numero 2",
+    question: "Breve descrição",
+    answer:
+      "Conheci a programação recentemente, e desde então, descobri que sou apaixonado por resolver problemas.",
   },
   {
-    question: "pergunta numero 3",
-    answer: "reposta numero 3",
+    question: "Eu gosto de",
+    answer: "Aprender algo novo, assistir séries e filmes, games, música...",
   },
 ];
