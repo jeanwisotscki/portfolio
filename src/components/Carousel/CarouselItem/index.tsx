@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 import {
@@ -9,7 +8,17 @@ import {
   TextsWrapper,
 } from "./styles";
 
-export const CarouselItem = () => {
+interface CardInfos {
+  thumbnail: String;
+  title: String;
+  description: String;
+}
+
+interface CarouselItemProps {
+  data: CardInfos;
+}
+
+export const CarouselItem = ({ data }: CarouselItemProps) => {
   return (
     <CardWrapper>
       <a
@@ -17,16 +26,13 @@ export const CarouselItem = () => {
         rel="noreferrer"
         target="_blank"
       >
-        <ImgWrapper></ImgWrapper>
+        <ImgWrapper>{data.thumbnail}</ImgWrapper>
         <TextsWrapper>
           <CardTitle>
-            <span>./</span> BuscaCEP-Brasil
+            <span>./</span> {data.title}
           </CardTitle>
           <CardDescription>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur tempora dicta dolorum velit quibusdam similique!
-            </p>
+            <p>{data.description}</p>
           </CardDescription>
         </TextsWrapper>
       </a>

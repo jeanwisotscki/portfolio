@@ -1,4 +1,4 @@
-export const data = [
+export const accordionData = [
   {
     question: "Antes de tudo",
     answer:

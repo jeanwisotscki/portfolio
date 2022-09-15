@@ -1,12 +1,12 @@
 import React from "react";
 
-import { data } from "./data";
+import { accordionData } from "./data";
 import { AccordionItem } from "./AccordionItem";
 
 export const Accordion = () => {
   return (
     <div>
-      {data.map((item, index) => (
+      {accordionData.map((item, index) => (
         <AccordionItem
           key={index}
           index={index}
