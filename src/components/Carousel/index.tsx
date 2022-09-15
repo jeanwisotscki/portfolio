@@ -1,19 +1,20 @@
 import React from "react";
 import Image from "next/image";
+import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { CarouselItem } from "./CarouselItem";
+import { carouselData } from "./carouselData";
 
 import { RedirectButton } from "../RedirectButton";
 
 import "swiper/css";
-import { SelectorsWrapper } from "./styles";
-import { carouselData } from "./carouselData";
+import "swiper/css/pagination";
 
 export const Carousel = () => {
   return (
     <div>
-      <Swiper>
+      <Swiper pagination={true} modules={[Pagination]}>
         {carouselData.map((item, index) => (
           <SwiperSlide key={index}>
             <CarouselItem data={item} />
@@ -21,9 +22,6 @@ export const Carousel = () => {
         ))}
       </Swiper>
 
-      <SelectorsWrapper>
-        <p>seletores</p>
-      </SelectorsWrapper>
       <RedirectButton
         href="https://github.com/jeanwisotscki/"
         icon={
