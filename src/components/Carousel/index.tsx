@@ -1,19 +1,26 @@
 import React from "react";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import { carouselData } from "./carouselData";
 import { CarouselItem } from "./CarouselItem";
 
 import { RedirectButton } from "../RedirectButton";
 
+import "swiper/css";
 import { SelectorsWrapper } from "./styles";
+import { carouselData } from "./carouselData";
 
 export const Carousel = () => {
   return (
     <div>
-      {carouselData.map((item, index) => (
-        <CarouselItem key={index} data={item} />
-      ))}
+      <Swiper>
+        {carouselData.map((item, index) => (
+          <SwiperSlide key={index}>
+            <CarouselItem data={item} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
       <SelectorsWrapper>
         <p>seletores</p>
       </SelectorsWrapper>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { accordionData } from "./data";
+import { accordionData } from "./accordionData";
 import { AccordionItem } from "./AccordionItem";
 
 export const Accordion = () => {
