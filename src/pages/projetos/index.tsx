@@ -6,7 +6,7 @@ import { PageTitle } from "../../components/PageTitle";
 import { LayoutBase } from "../../components/LayoutBase";
 import { RedirectButton } from "../../components/RedirectButton";
 
-import { ButtonWrapper, Container } from "./styles";
+import { ButtonWrapper, CarouselWrapper, MainContainer } from "./styles";
 
 //
 const Projetos = () => {
@@ -14,8 +14,10 @@ const Projetos = () => {
     <LayoutBase>
       <PageTitle title="Projetos" />
 
-      <Container>
-        <Carousel />
+      <MainContainer>
+        <CarouselWrapper>
+          <Carousel />
+        </CarouselWrapper>
 
         <ButtonWrapper>
           <RedirectButton
@@ -32,7 +34,7 @@ const Projetos = () => {
             veja mais
           </RedirectButton>
         </ButtonWrapper>
-      </Container>
+      </MainContainer>
     </LayoutBase>
   );
 };

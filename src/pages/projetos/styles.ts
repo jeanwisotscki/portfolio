@@ -1,22 +1,17 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  color: #fff;
+export const MainContainer = styled.div`
   min-height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  border: 1px solid #fff;
+  justify-content: space-around;
+`;
 
-  @media (max-width: 769px) {
-    display: block;
-  }
+export const CarouselWrapper = styled.div`
+  color: #fff;
 `;
 
 export const ButtonWrapper = styled.div`
   width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 1rem auto;
+  margin: 0 auto;
 `;
