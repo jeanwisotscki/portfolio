@@ -7,9 +7,7 @@ export const MainContainer = styled.div`
   justify-content: space-around;
 `;
 
-export const CarouselWrapper = styled.div`
-  color: #fff;
-`;
+export const CarouselWrapper = styled.div``;
 
 export const ButtonWrapper = styled.div`
   width: 60%;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const CardWrapper = styled.div`
+  color: ${(props) => props.theme.colors.white};
   min-height: 17rem;
   width: 80%;
   display: grid;
@@ -8,7 +9,6 @@ export const CardWrapper = styled.div`
   grid-template-rows: 1fr;
   margin: 0 auto;
   margin-bottom: 3rem;
-  border: 1px solid white;
 
   @media (max-width: 769px) {
     max-width: 17rem;
@@ -25,14 +25,19 @@ export const ImgWrapper = styled.div`
 
 export const TextsWrapper = styled.div`
   width: 100%;
-  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+
+  @media (max-width: 769px) {
+    padding: 1rem 0;
+  }
 `;
 
 export const CardTitle = styled.h3`
-  margin: 0.5rem 0;
-
   span {
-    color: yellow;
+    color: #fb1;
   }
 
   &::before {
@@ -44,8 +49,7 @@ export const CardTitle = styled.h3`
 
 export const CardDescription = styled.div`
   display: flex;
-  margin-top: 0.5rem;
-  margin-left: 1rem;
+  padding: 0.5rem;
 
   &::before {
     content: "~$";
