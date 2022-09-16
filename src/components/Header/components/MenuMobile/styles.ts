@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   align-items: center;
+  z-index: 9;
 
   button {
     width: 30px;
@@ -10,7 +11,7 @@ export const Container = styled.div`
     color: ${(props) => props.theme.colors.lightBlue};
     background: none;
     border: none;
-    z-index: 5;
+    z-index: 9;
   }
 
   nav {

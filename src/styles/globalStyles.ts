@@ -34,4 +34,19 @@ export const GlobalStyle = createGlobalStyle`
     outline: none;
     cursor: pointer;
   }
+
+  .swiper-pagination-bullet {
+    height: 15px;
+    width: 15px;
+    border: 2px solid #fb1 !important;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    height: 15px;
+    width: 15px;
+    background-color: #fb1 !important;
+    border-color: #fb1 !important;
+  }
+
 `;

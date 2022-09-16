@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 import {
@@ -9,8 +10,8 @@ import {
 } from "./styles";
 
 interface CardInfos {
-  thumbnail: String;
   title: String;
+  thumbnail: String;
   description: String;
 }
 
@@ -20,22 +21,24 @@ interface CarouselItemProps {
 
 export const CarouselItem = ({ data }: CarouselItemProps) => {
   return (
-    <CardWrapper>
-      <a
-        href={"https://github.com/jeanwisotscki/"}
-        rel="noreferrer"
-        target="_blank"
-      >
+    <a
+      href={"https://github.com/jeanwisotscki/"}
+      rel="noreferrer"
+      target="_blank"
+    >
+      <CardWrapper>
         <ImgWrapper>{data.thumbnail}</ImgWrapper>
+
         <TextsWrapper>
           <CardTitle>
             <span>./</span> {data.title}
           </CardTitle>
+
           <CardDescription>
             <p>{data.description}</p>
           </CardDescription>
         </TextsWrapper>
-      </a>
-    </CardWrapper>
+      </CardWrapper>
+    </a>
   );
 };
