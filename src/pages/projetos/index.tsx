@@ -12,7 +12,7 @@ import { ButtonWrapper, CarouselWrapper, MainContainer } from "./styles";
 const Projetos = () => {
   return (
     <LayoutBase>
-      <PageTitle title="Projetos" />
+      <PageTitle title="Projetos" borderColor="purple" />
 
       <MainContainer>
         <CarouselWrapper>
@@ -22,9 +22,10 @@ const Projetos = () => {
         <ButtonWrapper>
           <RedirectButton
             href="https://github.com/jeanwisotscki/"
+            color="purple"
             icon={
               <Image
-                src={"/github-icon.svg"}
+                src={"/github-icon-purple.svg"}
                 width={50}
                 height={50}
                 alt="github icon"

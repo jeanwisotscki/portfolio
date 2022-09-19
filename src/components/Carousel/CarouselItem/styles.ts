@@ -37,12 +37,12 @@ export const TextsWrapper = styled.div`
 
 export const CardTitle = styled.h3`
   span {
-    color: #fb1;
+    color: ${(props) => props.theme.colors.yellow};
   }
 
   &::before {
     content: "cd";
-    color: #b2156a;
+    color: ${(props) => props.theme.colors.pink};
     margin-right: 0.5rem;
   }
 `;
@@ -53,7 +53,7 @@ export const CardDescription = styled.div`
 
   &::before {
     content: "~$";
-    color: #b2156a;
+    color: ${(props) => props.theme.colors.pink};
     margin-right: 0.5rem;
   }
 `;

@@ -8,7 +8,7 @@ export const Container = styled.div`
   button {
     width: 30px;
     height: 30px;
-    color: ${(props) => props.theme.colors.lightBlue};
+    color: ${(props) => props.theme.colors.white};
     background: none;
     border: none;
     z-index: 9;

@@ -9,12 +9,13 @@ import { Container, SubTitle } from "./styles";
 const Contato = () => {
   return (
     <LayoutBase>
-      <PageTitle title="Contato" />
+      <PageTitle title="Contato" borderColor="red" />
       <SubTitle>Curtiu o meu trabalho ou quer conversar comigo?</SubTitle>
 
       <Container>
         <RedirectButton
           href="https://www.linkedin.com/in/jean-wisotscki/"
+          color="red"
           icon={
             <Image
               src={"/linkedin-icon.svg"}
@@ -29,6 +30,7 @@ const Contato = () => {
 
         <RedirectButton
           href="https://github.com/jeanwisotscki/"
+          color="red"
           icon={
             <Image
               src={"/github-icon.svg"}
@@ -38,7 +40,7 @@ const Contato = () => {
             />
           }
         >
-          git hub
+          github
         </RedirectButton>
       </Container>
     </LayoutBase>

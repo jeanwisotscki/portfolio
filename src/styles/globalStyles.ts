@@ -38,15 +38,15 @@ export const GlobalStyle = createGlobalStyle`
   .swiper-pagination-bullet {
     height: 15px;
     width: 15px;
-    border: 2px solid #fb1 !important;
+    border: 2px solid #b93bf4 !important;
     opacity: 1;
   }
 
   .swiper-pagination-bullet-active {
     height: 15px;
     width: 15px;
-    background-color: #fb1 !important;
-    border-color: #fb1 !important;
+    background-color: #b93bf4 !important;
+    border-color: #b93bf4 !important;
   }
 
 `;

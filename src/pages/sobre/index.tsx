@@ -9,7 +9,7 @@ import { Container } from "./styles";
 const Sobre = () => {
   return (
     <LayoutBase>
-      <PageTitle title="Sobre" />
+      <PageTitle title="Sobre" borderColor="blue" />
       <Container>
         <Accordion />
       </Container>

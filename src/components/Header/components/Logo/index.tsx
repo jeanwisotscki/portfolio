@@ -2,16 +2,23 @@ import Link from "next/link";
 
 import styled from "styled-components";
 
-const LogoText = styled.h1`
-  color: ${(props) => props.theme.colors.lightBlue};
-  padding: 0.8rem 1rem;
+const LogoText = styled.strong`
+  color: ${(props) => props.theme.colors.white};
+  font-size: ${(props) => props.theme.fontSizes.medium};
+  padding: 0.8rem 1rem 0.8rem 0;
   cursor: pointer;
+
+  span {
+    font-weight: 100;
+  }
 `;
 
 export const Logo = () => {
   return (
     <Link href="/">
-      <LogoText>jW.dev</LogoText>
+      <LogoText>
+        <span>jW</span>.dev
+      </LogoText>
     </Link>
   );
 };

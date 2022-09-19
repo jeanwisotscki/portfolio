@@ -11,6 +11,8 @@ const theme = {
     purple: "#b93bf4",
     blue: "#2647f4",
     red: "#f43b3b",
+    yellow: "#fb1",
+    pink: "#b2156a",
     white: "#FFFDF9",
     lightBlue: "#AFDBD2",
     onyx: "#36313D",
