@@ -26,12 +26,10 @@ const theme = {
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </>
+      <Component {...pageProps} />
+    </ThemeProvider>
   );
 }
 
