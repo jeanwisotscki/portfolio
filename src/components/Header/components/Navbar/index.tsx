@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ToggleThemeButton } from "../../../ToggleThemeButton";
 import { Nav, NavLi, NavUl } from "./styles";
 
 export const Navbar = () => {
@@ -25,6 +26,10 @@ export const Navbar = () => {
           <Link href="/contato">
             <a>Contato</a>
           </Link>
+        </NavLi>
+
+        <NavLi>
+          <ToggleThemeButton />
         </NavLi>
       </NavUl>
     </Nav>

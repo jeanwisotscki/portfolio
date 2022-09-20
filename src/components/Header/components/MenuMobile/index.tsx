@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { Dispatch, SetStateAction } from "react";
+import { ToggleThemeButton } from "../../../ToggleThemeButton";
 
 import { Container } from "./styles";
 
@@ -75,6 +76,9 @@ export const MenuMobile = (props: MenuMobileProps) => {
               <Link href="/contato">
                 <a>Contato</a>
               </Link>
+            </li>
+            <li>
+              <ToggleThemeButton />
             </li>
           </ul>
         </nav>
