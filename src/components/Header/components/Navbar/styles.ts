@@ -11,14 +11,14 @@ export const NavUl = styled.ul`
 
 export const NavLi = styled.li`
   a {
-    color: ${(props) => props.theme.colors.white};
+    color: ${(props) => props.theme.colors.textSecondary};
     display: block;
     padding: 0.7rem 1.2rem;
     border-bottom: 2px solid transparent;
     transition: 0.3s;
 
     &:hover {
-      border-bottom: 2px solid ${(props) => props.theme.colors.green};
+      border-bottom: 2px solid ${(props) => props.theme.colors.secondary};
     }
   }
 `;

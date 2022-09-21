@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
   min-height: 100vh;
-  background: ${(props) => props.theme.colors.bgPrimary};
+  background: ${(props) => props.theme.colors.background};
 `;
 
 export const Container = styled.main`

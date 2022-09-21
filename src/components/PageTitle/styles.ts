@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Title = styled.h1`
   display: inline-block;
-  color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.secondary};
   font-size: ${(props) => props.theme.fontSizes.large};
   margin: 2rem 0;
 

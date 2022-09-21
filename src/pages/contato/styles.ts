@@ -10,6 +10,6 @@ export const Container = styled.div`
 `;
 
 export const SubTitle = styled.h3`
-  color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.textSecondary};
   margin-top: 1rem;
 `;

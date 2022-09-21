@@ -12,7 +12,7 @@ export const QuestionWrapper = styled.div`
 
 export const Question = styled.h3`
   width: 100%;
-  color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.primary};
   display: flex;
   align-items: center;
 
@@ -43,12 +43,13 @@ export const IconWrapper = styled.div`
 `;
 
 export const Answer = styled.p`
-  color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.secondary};
 
   &::before {
     content: "~$";
-    color: ${(props) => props.theme.colors.red};
+    color: ${(props) => props.theme.colors.pink};
     font-size: 1.2rem;
+    font-weight: bold;
     margin-left: 2rem;
     margin-right: 0.5rem;
   }

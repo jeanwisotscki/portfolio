@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardWrapper = styled.div`
-  color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.secondary};
   min-height: 17rem;
   width: 80%;
   display: grid;
@@ -18,7 +18,7 @@ export const CardWrapper = styled.div`
 `;
 
 export const ImgWrapper = styled.div`
-  background-color: #ccc;
+  background-color: #333333;
   width: 100%;
   height: 100%;
 `;

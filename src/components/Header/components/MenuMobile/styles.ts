@@ -8,15 +8,15 @@ export const Container = styled.div`
   button {
     width: 30px;
     height: 30px;
-    color: ${(props) => props.theme.colors.white};
+    color: ${(props) => props.theme.colors.secondary};
     background: none;
     border: none;
     z-index: 9;
   }
 
   nav {
-    background-color: ${(props) => props.theme.colors.bgDarkBlue};
-    color: ${(props) => props.theme.colors.white};
+    background-color: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.secondary};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +30,7 @@ export const Container = styled.div`
     ul li a {
       display: block;
       font-weight: bold;
-      border-bottom: 2px solid ${(props) => props.theme.colors.green};
+      border-bottom: 2px solid ${(props) => props.theme.colors.primary};
       padding: 1rem 3rem;
     }
   }
