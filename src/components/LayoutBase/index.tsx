@@ -6,7 +6,7 @@ import { Header } from "../Header";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { darkTheme, lightTheme } from "../../styles/themes";
 
-import { Container } from "./styles";
+import { Container, MainContainer } from "./styles";
 
 interface LayoutBaseProps {
   children: React.ReactNode;
@@ -21,8 +21,10 @@ export const LayoutBase = (props: LayoutBaseProps) => {
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-      <Header />
-      <Container>{props.children}</Container>
+      <MainContainer>
+        <Header />
+        <Container>{props.children}</Container>
+      </MainContainer>
     </ThemeProvider>
   );
 };

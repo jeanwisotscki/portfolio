@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const MainContainer = styled.div`
+  min-height: 100vh;
+  background: ${(props) => props.theme.colors.bgPrimary};
+`;
+
 export const Container = styled.main`
   max-width: 50rem;
   width: 90%;
