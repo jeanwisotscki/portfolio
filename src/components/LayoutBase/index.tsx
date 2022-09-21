@@ -1,4 +1,7 @@
 import React, { ReactNode } from "react";
+import { ThemeProvider } from "styled-components";
+import { ThemeContext } from "../../contexts/ThemeContext";
+import { darkTheme, lightTheme } from "../../styles/themes";
 
 import { Header } from "../Header";
 
@@ -9,10 +12,18 @@ interface LayoutBaseProps {
 }
 
 export const LayoutBase = (props: LayoutBaseProps) => {
+  const { theme } = React.useContext(ThemeContext);
+
+  React.useEffect(() => {
+    console.log("app tema:", theme);
+  }, [theme]);
+
   return (
     <>
-      <Header />
-      <Container>{props.children}</Container>
+      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+        <Header />
+        <Container>{props.children}</Container>
+      </ThemeProvider>
     </>
   );
 };

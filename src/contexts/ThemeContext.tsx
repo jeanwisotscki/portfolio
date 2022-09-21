@@ -1,19 +1,28 @@
 import React from "react";
 
-interface IThemeContextProvider {
+interface IThemeContextProviderProps {
   children: React.ReactNode;
 }
 
-export const ThemeContext = React.createContext({});
+type ThemeContextType = {
+  theme: string;
+  setTheme: (newState: string) => void;
+};
+
+const defaultValue = {
+  theme: "light",
+  setTheme: () => {},
+};
+
+export const ThemeContext = React.createContext<ThemeContextType>(defaultValue);
 
 export default function ThemeContextProvider({
   children,
-}: IThemeContextProvider) {
-  const [theme, setTheme] = React.useState<"light" | "dark">("dark");
-  console.log(theme);
+}: IThemeContextProviderProps) {
+  const [theme, setTheme] = React.useState(defaultValue.theme);
 
   return (
-    <ThemeContext.Provider value={(theme, setTheme)}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       {children}
     </ThemeContext.Provider>
   );
