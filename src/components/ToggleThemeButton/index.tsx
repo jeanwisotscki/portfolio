@@ -1,4 +1,5 @@
 import React from "react";
+
 import { ThemeContext } from "../../contexts/ThemeContext";
 
 export const ToggleThemeButton = () => {
@@ -7,7 +8,6 @@ export const ToggleThemeButton = () => {
 
   function handleTheme() {
     theme === "light" ? setTheme("dark") : setTheme("light");
-    console.log(theme);
   }
 
   return <button onClick={handleTheme}>toggle theme</button>;
