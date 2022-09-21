@@ -1,9 +1,11 @@
 import type { AppProps } from "next/app";
+import React from "react";
 import { ThemeProvider } from "styled-components";
+import ThemeContextProvider, { ThemeContext } from "../contexts/ThemeContext";
 
 import { GlobalStyle } from "../styles/globalStyles";
 
-const theme = {
+const themes = {
   colors: {
     bgDarkBlue: "#0d0f39",
     bgBlack: "#01010d",
@@ -25,11 +27,16 @@ const theme = {
 };
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const { theme } = React.useContext(ThemeContext);
+  console.log(theme);
+
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <ThemeContextProvider>
+      <ThemeProvider theme={themes}>
+        <GlobalStyle />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </ThemeContextProvider>
   );
 }
 
