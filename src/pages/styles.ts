@@ -1,10 +1,11 @@
 import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
-  height: 80vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid red;
 
   @media (max-width: 769px) {
     justify-content: start;
@@ -15,7 +16,6 @@ export const Container = styled.div`
 export const TitleWrapper = styled.div`
   max-width: 50%;
   width: 50%;
-  /* border: 1px solid red; */
 
   span {
     color: ${(props) => props.theme.colors.secondary};
@@ -33,19 +33,10 @@ export const TitleWrapper = styled.div`
     }
 
     strong {
-      /* display: block; */
       color: ${(props) => props.theme.colors.primary};
-
       font-size: 3rem;
       line-height: 0;
     }
-  }
-
-  strong {
-    /* display: block; */
-    color: ${(props) => props.theme.colors.primary};
-
-    font-size: 3rem;
   }
 
   @media (max-width: 769px) {
@@ -54,27 +45,16 @@ export const TitleWrapper = styled.div`
   }
 `;
 
-// const carousel = keyframes`
-//   0% { transform: translateX(0); }
-//   25% { transform: translateX(-10%); }
-//   75% { transform: translateX(10%); }
-//   100% { transform: translateX(0); }
-
-// `;
-
 export const Stacks = styled.strong`
   color: ${(props) => props.theme.colors.secondary};
   margin-top: 0.5rem;
-  opacity: 0.3;
-  /* animation: ${carousel} 3s linear infinite; */
+  opacity: 0.4;
 `;
 
-export const TextWrapper = styled.div`
+export const DescriptionWrapper = styled.div`
   max-width: 50%;
   width: 50%;
   color: ${(props) => props.theme.colors.primary};
-
-  /* border: 1px solid red; */
 
   @media (max-width: 769px) {
     min-width: 100%;

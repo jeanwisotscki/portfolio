@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 
 import { LayoutBase } from "../components/LayoutBase";
 
-import { Container, Stacks, TextWrapper, TitleWrapper } from "./styles";
+import { Container, Stacks, DescriptionWrapper, TitleWrapper } from "./styles";
 
 const Home: NextPage = () => {
   return (
@@ -15,16 +15,16 @@ const Home: NextPage = () => {
             <strong>Jean Wisotscki</strong>
           </div>
         </TitleWrapper>
-        <Stacks style={{ color: "#fff" }}>
+        <Stacks>
           React | Next.js | TypeScript | JavaScript | Styled-components |
           SASS/SCSS
         </Stacks>
-        <TextWrapper>
+        <DescriptionWrapper>
           <p>
             Desenvolvedor front-end em formação, estudante de Análise e
             Desenvolvimento de Sistemas e apaixonado por tecnologia.
           </p>
-        </TextWrapper>
+        </DescriptionWrapper>
       </Container>
     </LayoutBase>
   );
