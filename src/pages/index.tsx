@@ -1,25 +1,29 @@
-import Image from "next/image";
 import type { NextPage } from "next";
 
 import { LayoutBase } from "../components/LayoutBase";
 
-import { Container, ImgWrapper, TextWrapper } from "./styles";
+import { Container, Stacks, TextWrapper, TitleWrapper } from "./styles";
 
 const Home: NextPage = () => {
   return (
     <LayoutBase>
       <Container>
-        <ImgWrapper>
-          <Image
-            src="/home-decoration.svg"
-            width={250}
-            height={250}
-            alt="decoration"
-          />
-        </ImgWrapper>
+        <TitleWrapper>
+          <span>Olá 👋</span>
+          <div>
+            <span>eu sou </span>
+            <strong>Jean Wisotscki</strong>
+          </div>
+        </TitleWrapper>
+        <Stacks style={{ color: "#fff" }}>
+          React | Next.js | TypeScript | JavaScript | Styled-components |
+          SASS/SCSS
+        </Stacks>
         <TextWrapper>
-          <h1>Bem vindos</h1>
-          <h2>ao meu portfólio</h2>
+          <p>
+            Desenvolvedor front-end em formação, estudante de Análise e
+            Desenvolvimento de Sistemas e apaixonado por tecnologia.
+          </p>
         </TextWrapper>
       </Container>
     </LayoutBase>

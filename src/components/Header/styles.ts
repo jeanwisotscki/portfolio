@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  padding: 0 2rem;
+  padding: 4rem 2rem;
+  border-bottom: 1px solid ${(props) => props.theme.colors.headerBorder};
+
+  @media (max-width: 769px) {
+    padding: 1rem 2rem;
+  }
 `;
 
 export const ContentContainer = styled.div`
