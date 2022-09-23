@@ -1,19 +1,25 @@
-import type { NextPage } from "next";
-import Image from "next/image";
+import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
+import type { NextPage } from "next";
+
+import LinkButton from "../components/LinkButton";
 import { LayoutBase } from "../components/LayoutBase";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 import {
   Container,
   Stacks,
-  DescriptionWrapper,
+  Description,
   Header,
   Presentation,
   SeeMoreContainer,
 } from "./styles";
 
 const Home: NextPage = () => {
+  const { theme } = React.useContext(ThemeContext);
+
   return (
     <LayoutBase>
       <Container>
@@ -30,22 +36,27 @@ const Home: NextPage = () => {
             SASS/SCSS
           </Stacks>
         </Header>
-        <DescriptionWrapper>
+
+        <Description>
           <p>
             Desenvolvedor front-end em formação, estudante de Análise e
             Desenvolvimento de Sistemas e apaixonado por tecnologia.
           </p>
-          <br />
           <p>
-            Sinta-se a vontade para conferir os meus{" "}
-            <Link href={"/projetos"}>projetos</Link>
+            Sinta-se a vontade para conferir os meus
+            <LinkButton href="/projetos" textContent="projetos," />
+            a seção
+            <LinkButton href="/sobre" textContent="sobre" />
+            ou, se preferir, ir direto para
+            <LinkButton href="/contato" textContent="contato." />
           </p>
-        </DescriptionWrapper>
+        </Description>
+
         <Link href={"/sobre"}>
           <SeeMoreContainer>
             <a>Veja mais sobre mim</a>
             <Image
-              src="/arrow-right.svg"
+              src={theme === "light" ? "/arrow-black.svg" : "/arrow-white.svg"}
               width={15}
               height={15}
               alt="arrow icon"

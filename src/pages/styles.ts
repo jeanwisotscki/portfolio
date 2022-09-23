@@ -1,14 +1,18 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 75vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: 769px) {
+    justify-content: initial;
+  }
 `;
 
 export const Header = styled.div`
   padding: 1rem;
-  margin-top: 3rem;
 
   @media (max-width: 769px) {
     margin-top: 2rem;
@@ -34,7 +38,7 @@ export const Presentation = styled.div`
 
     strong {
       color: ${(props) => props.theme.colors.primary};
-      font-size: 5rem;
+      font-size: 4rem;
       line-height: 0;
 
       @media (max-width: 769px) {
@@ -53,7 +57,7 @@ export const Stacks = styled.strong`
   opacity: 0.4;
 `;
 
-export const DescriptionWrapper = styled.div`
+export const Description = styled.div`
   color: ${(props) => props.theme.colors.primary};
   padding: 1rem;
   opacity: 0.7;
@@ -61,6 +65,14 @@ export const DescriptionWrapper = styled.div`
   p {
     font-size: 1.5rem;
     text-align: justify;
+    margin: 1rem 0;
+  }
+
+  a {
+    color: ${(props) => props.theme.colors.green};
+    margin: 0 0.5rem;
+    text-decoration: underline;
+    transition: 0.3s;
   }
 
   @media (max-width: 769px) {
@@ -72,10 +84,16 @@ export const DescriptionWrapper = styled.div`
 export const SeeMoreContainer = styled.div`
   display: flex;
   align-items: center;
+  margin-top: 3rem;
   gap: 0.5rem;
-  margin-top: auto;
   transition: 0.3s;
   cursor: pointer;
+
+  a {
+    color: ${(props) => props.theme.colors.primary};
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+  }
 
   &:hover {
     gap: 1rem;
@@ -83,10 +101,5 @@ export const SeeMoreContainer = styled.div`
     a {
       border-bottom: 2px solid ${(props) => props.theme.colors.green};
     }
-  }
-
-  a {
-    color: ${(props) => props.theme.colors.primary};
-    border-bottom: 2px solid transparent;
   }
 `;
