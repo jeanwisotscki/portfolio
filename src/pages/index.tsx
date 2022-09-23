@@ -1,4 +1,6 @@
 import type { NextPage } from "next";
+import Image from "next/image";
+import Link from "next/link";
 
 import { LayoutBase } from "../components/LayoutBase";
 
@@ -8,6 +10,7 @@ import {
   DescriptionWrapper,
   Header,
   Presentation,
+  SeeMoreContainer,
 } from "./styles";
 
 const Home: NextPage = () => {
@@ -32,8 +35,23 @@ const Home: NextPage = () => {
             Desenvolvedor front-end em formação, estudante de Análise e
             Desenvolvimento de Sistemas e apaixonado por tecnologia.
           </p>
+          <br />
+          <p>
+            Sinta-se a vontade para conferir os meus{" "}
+            <Link href={"/projetos"}>projetos</Link>
+          </p>
         </DescriptionWrapper>
-        <p>Leia mais sobre mim</p>
+        <Link href={"/sobre"}>
+          <SeeMoreContainer>
+            <a>Veja mais sobre mim</a>
+            <Image
+              src="/arrow-right.svg"
+              width={15}
+              height={15}
+              alt="arrow icon"
+            />
+          </SeeMoreContainer>
+        </Link>
       </Container>
     </LayoutBase>
   );

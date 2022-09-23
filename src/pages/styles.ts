@@ -1,17 +1,18 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const Container = styled.div`
   height: 75vh;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 `;
 
 export const Header = styled.div`
   padding: 1rem;
+  margin-top: 3rem;
 
   @media (max-width: 769px) {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    padding: 0 1rem;
   }
 `;
 
@@ -38,6 +39,7 @@ export const Presentation = styled.div`
 
       @media (max-width: 769px) {
         font-size: 3rem;
+        line-height: 0.6;
       }
     }
   }
@@ -63,5 +65,28 @@ export const DescriptionWrapper = styled.div`
 
   @media (max-width: 769px) {
     margin-top: 2rem;
+    padding: 0 1rem;
+  }
+`;
+
+export const SeeMoreContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    gap: 1rem;
+
+    a {
+      border-bottom: 2px solid ${(props) => props.theme.colors.green};
+    }
+  }
+
+  a {
+    color: ${(props) => props.theme.colors.primary};
+    border-bottom: 2px solid transparent;
   }
 `;

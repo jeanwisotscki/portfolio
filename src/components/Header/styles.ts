@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  padding: 4rem 2rem;
+  padding: 3rem 2rem 0;
   border-bottom: 1px solid ${(props) => props.theme.colors.headerBorder};
 
   @media (max-width: 769px) {
