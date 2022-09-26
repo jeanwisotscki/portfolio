@@ -31,6 +31,8 @@ export const GlobalStyle = createGlobalStyle`
     height: 15px;
     width: 15px;
     border: 2px solid #b93bf4 !important;
+    background-color: transparent !important;
+
     opacity: 1;
   }
 
@@ -38,7 +40,6 @@ export const GlobalStyle = createGlobalStyle`
     height: 15px;
     width: 15px;
     background-color: #b93bf4 !important;
-    border-color: #b93bf4 !important;
   }
 
 `;
