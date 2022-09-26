@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 import {
@@ -9,8 +10,9 @@ import {
 } from "./styles";
 
 interface CardInfos {
+  href: string;
   title: String;
-  thumbnail: String;
+  thumbnail: any;
   description: String;
 }
 
@@ -20,13 +22,9 @@ interface CarouselItemProps {
 
 export const CarouselItem = ({ data }: CarouselItemProps) => {
   return (
-    <a
-      href={"https://github.com/jeanwisotscki/"}
-      rel="noreferrer"
-      target="_blank"
-    >
+    <a href={data.href} rel="noreferrer" target="_blank">
       <CardWrapper>
-        <ImgWrapper>{data.thumbnail}</ImgWrapper>
+        <ImgWrapper thumbnail={data.thumbnail}></ImgWrapper>
 
         <TextsWrapper>
           <CardTitle>

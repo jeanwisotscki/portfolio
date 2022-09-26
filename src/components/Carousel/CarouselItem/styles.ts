@@ -17,8 +17,12 @@ export const CardWrapper = styled.div`
   }
 `;
 
-export const ImgWrapper = styled.div`
+export const ImgWrapper = styled.div<{ thumbnail: string }>`
   background-color: #333333;
+  background-image: url(${(props) => props.thumbnail});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 100%;
   height: 100%;
 `;
