@@ -91,15 +91,30 @@ export const SeeMoreContainer = styled.div`
 
   a {
     color: ${(props) => props.theme.colors.primary};
-    border-bottom: 2px solid transparent;
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-color: ${(props) => props.theme.colors.green};
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      transition: all 0.3s ease-in-out;
+    }
   }
 
   &:hover {
     gap: 1rem;
 
     a {
-      border-bottom: 2px solid ${(props) => props.theme.colors.green};
+      &::before {
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+      }
     }
   }
 `;
