@@ -50,6 +50,10 @@ interface MenuMobileProps {
 export const MenuMobile = (props: MenuMobileProps) => {
   return (
     <Container>
+      <div>
+        <ToggleThemeButton />
+      </div>
+
       <button onClick={() => props.setMenuIsOpen((prevValue) => !prevValue)}>
         {props.menuIsOpen ? <IconClose /> : <IconHamburg />}
       </button>
@@ -76,9 +80,6 @@ export const MenuMobile = (props: MenuMobileProps) => {
               <Link href="/contato">
                 <a>Contato</a>
               </Link>
-            </li>
-            <li>
-              <ToggleThemeButton />
             </li>
           </ul>
         </nav>

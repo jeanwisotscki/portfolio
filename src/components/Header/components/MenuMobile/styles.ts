@@ -5,6 +5,10 @@ export const Container = styled.div`
   align-items: center;
   z-index: 9;
 
+  div {
+    margin-right: 2rem;
+  }
+
   button {
     width: 30px;
     height: 30px;

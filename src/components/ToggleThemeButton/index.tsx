@@ -7,8 +7,12 @@ import styled from "styled-components";
 
 const Button = styled.button`
   background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   outline: none;
+  transition: 0.3s;
 `;
 
 export const ToggleThemeButton = () => {
