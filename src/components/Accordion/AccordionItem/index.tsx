@@ -47,9 +47,9 @@ const ArrowUpIcon = () => {
 };
 
 interface AccordionItemProps {
-  question: string;
-  answer: string;
   index: number;
+  answer: string;
+  question: string;
 }
 
 export const AccordionItem = (props: AccordionItemProps) => {

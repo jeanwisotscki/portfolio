@@ -12,23 +12,36 @@ export const QuestionWrapper = styled.div`
 
 export const Question = styled.h3`
   width: 100%;
-  color: ${(props) => props.theme.colors.primary};
   display: flex;
   align-items: center;
+  color: ${(props) => props.theme.colors.primary};
+  font-size: ${(props) => props.theme.fontSizes.medium};
 
   &::before {
     content: "<";
     color: ${(props) => props.theme.colors.blue};
-    font-size: 1.5rem;
+    font-size: ${(props) => props.theme.fontSizes.medium};
     margin-right: 0.5rem;
   }
 
   &::after {
     content: "/>";
     color: ${(props) => props.theme.colors.blue};
-    font-size: 1.5rem;
+    font-size: ${(props) => props.theme.fontSizes.medium};
     line-height: 0.9;
     margin-left: 0.5rem;
+  }
+
+  @media (max-width: 769px) {
+    font-size: ${(props) => props.theme.fontSizes.small};
+
+    &::before {
+      font-size: ${(props) => props.theme.fontSizes.small};
+    }
+
+    &::after {
+      font-size: ${(props) => props.theme.fontSizes.small};
+    }
   }
 `;
 
@@ -44,13 +57,22 @@ export const IconWrapper = styled.div`
 
 export const Answer = styled.p`
   color: ${(props) => props.theme.colors.secondary};
+  font-size: ${(props) => props.theme.fontSizes.medium};
+  text-align: justify;
 
   &::before {
     content: "~$";
     color: ${(props) => props.theme.colors.pink};
-    font-size: 1.2rem;
+    font-size: ${(props) => props.theme.fontSizes.medium};
     font-weight: bold;
-    margin-left: 2rem;
     margin-right: 0.5rem;
+  }
+
+  @media (max-width: 769px) {
+    font-size: ${(props) => props.theme.fontSizes.small};
+
+    &::before {
+      font-size: ${(props) => props.theme.fontSizes.small};
+    }
   }
 `;

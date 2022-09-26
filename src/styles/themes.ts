@@ -20,9 +20,9 @@ export const lightTheme = {
     onyx: "#36313D",
   },
   fontSizes: {
-    small: "1em",
-    medium: "2em",
-    large: "3em",
+    small: "1rem",
+    medium: "1.5rem",
+    large: "3rem",
   },
 };
 
