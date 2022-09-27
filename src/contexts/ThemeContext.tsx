@@ -10,7 +10,7 @@ type ThemeContextType = {
 };
 
 const defaultValue = {
-  theme: "light",
+  theme: "dark",
   setTheme: () => {},
 };
 

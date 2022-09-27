@@ -15,10 +15,6 @@ interface LayoutBaseProps {
 export const LayoutBase = (props: LayoutBaseProps) => {
   const { theme } = React.useContext(ThemeContext);
 
-  React.useEffect(() => {
-    console.log("tema atual: " + theme);
-  }, [theme]);
-
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <MainContainer>

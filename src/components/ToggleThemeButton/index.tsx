@@ -18,12 +18,17 @@ const Button = styled.button`
 export const ToggleThemeButton = () => {
   const { theme, setTheme } = React.useContext(ThemeContext);
 
-  function handleTheme() {
+  function toggleTheme() {
     theme === "light" ? setTheme("dark") : setTheme("light");
   }
 
+  React.useEffect(() => {
+    localStorage.setItem("@theme", theme);
+    console.log("tema no localstorage: ", theme);
+  }, [theme]);
+
   return (
-    <Button onClick={handleTheme}>
+    <Button onClick={toggleTheme}>
       <Image
         src={theme === "light" ? "/sun.svg" : "/moon.svg"}
         width={25}
