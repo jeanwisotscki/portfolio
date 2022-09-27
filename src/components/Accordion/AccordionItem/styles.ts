@@ -33,14 +33,14 @@ export const Question = styled.h3`
   }
 
   @media (max-width: 769px) {
-    font-size: ${(props) => props.theme.fontSizes.small};
+    font-size: ${(props) => props.theme.fontSizes.normal};
 
     &::before {
-      font-size: ${(props) => props.theme.fontSizes.small};
+      font-size: ${(props) => props.theme.fontSizes.normal};
     }
 
     &::after {
-      font-size: ${(props) => props.theme.fontSizes.small};
+      font-size: ${(props) => props.theme.fontSizes.normal};
     }
   }
 `;
@@ -69,10 +69,10 @@ export const Answer = styled.p`
   }
 
   @media (max-width: 769px) {
-    font-size: ${(props) => props.theme.fontSizes.small};
+    font-size: ${(props) => props.theme.fontSizes.normal};
 
     &::before {
-      font-size: ${(props) => props.theme.fontSizes.small};
+      font-size: ${(props) => props.theme.fontSizes.normal};
     }
   }
 `;

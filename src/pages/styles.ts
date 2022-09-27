@@ -23,7 +23,7 @@ export const Header = styled.div`
 export const Presentation = styled.div`
   span {
     color: ${(props) => props.theme.colors.secondary};
-    font-size: 1.5rem;
+    font-size: ${(props) => props.theme.fontSizes.medium};
   }
 
   div {
@@ -42,7 +42,7 @@ export const Presentation = styled.div`
       line-height: 0;
 
       @media (max-width: 769px) {
-        font-size: 3rem;
+        font-size: ${(props) => props.theme.fontSizes.xtLarge};
         line-height: 0.6;
       }
     }
@@ -63,7 +63,7 @@ export const Description = styled.div`
   opacity: 0.7;
 
   p {
-    font-size: 1.5rem;
+    font-size: ${(props) => props.theme.fontSizes.medium};
     text-align: justify;
     margin: 1rem 0;
   }

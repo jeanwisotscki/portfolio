@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const LogoText = styled.strong`
   color: ${(props) => props.theme.colors.textSecondary};
-  font-size: ${(props) => props.theme.fontSizes.medium};
+  font-size: ${(props) => props.theme.fontSizes.large};
   padding: 0.8rem 1rem 0.8rem 0;
   cursor: pointer;
 

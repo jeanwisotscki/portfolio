@@ -20,9 +20,10 @@ export const lightTheme = {
     onyx: "#36313D",
   },
   fontSizes: {
-    small: "1rem",
+    normal: "1rem",
     medium: "1.5rem",
-    large: "3rem",
+    large: "2rem",
+    xtLarge: "3rem",
   },
 };
 
@@ -48,9 +49,10 @@ export const darkTheme = {
     onyx: "#36313D",
   },
   fontSizes: {
-    small: "1rem",
+    normal: "1rem",
     medium: "1.5rem",
-    large: "3rem",
+    large: "2rem",
+    xtLarge: "3rem",
   },
 };
 
