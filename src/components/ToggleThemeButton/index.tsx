@@ -19,13 +19,14 @@ export const ToggleThemeButton = () => {
   const { theme, setTheme } = React.useContext(ThemeContext);
 
   function toggleTheme() {
-    theme === "light" ? setTheme("dark") : setTheme("light");
+    if (theme === "light") {
+      setTheme("dark");
+      localStorage.setItem("@theme", "dark");
+    } else {
+      setTheme("light");
+      localStorage.setItem("@theme", "light");
+    }
   }
-
-  React.useEffect(() => {
-    localStorage.setItem("@theme", theme);
-    console.log("tema no localstorage: ", theme);
-  }, [theme]);
 
   return (
     <Button onClick={toggleTheme}>

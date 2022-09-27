@@ -10,7 +10,7 @@ type ThemeContextType = {
 };
 
 const defaultValue = {
-  theme: "dark",
+  theme: "light",
   setTheme: () => {},
 };
 
@@ -20,6 +20,15 @@ export default function ThemeContextProvider({
   children,
 }: IThemeContextProviderProps) {
   const [theme, setTheme] = React.useState(defaultValue.theme);
+
+  React.useEffect(() => {
+    const actualThemeInStorage = localStorage.getItem("@theme");
+
+    if (!actualThemeInStorage)
+      return localStorage.setItem("@theme", defaultValue.theme);
+
+    if (actualThemeInStorage) return setTheme(actualThemeInStorage);
+  }, []);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
