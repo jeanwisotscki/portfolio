@@ -91,7 +91,6 @@ export const SeeMoreContainer = styled.div`
 
   a {
     color: ${(props) => props.theme.colors.primary};
-    transition: all 0.3s ease-in-out;
     position: relative;
 
     &::before {
@@ -113,7 +112,6 @@ export const SeeMoreContainer = styled.div`
     a {
       &::before {
         width: 100%;
-        transition: all 0.3s ease-in-out;
       }
     }
   }
