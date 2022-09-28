@@ -3,9 +3,9 @@ import { ReactNode } from "react";
 import { Button, ButtonWrapper, IconWrapper } from "./styles";
 
 interface RedirectButtonProps {
-  children: string;
-  icon: ReactNode;
   href: string;
+  icon: ReactNode;
+  children: string;
   color: "purple" | "blue" | "red" | "white";
 }
 

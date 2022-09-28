@@ -11,9 +11,9 @@ import {
 
 interface CardInfos {
   href: string;
-  title: String;
+  title: string;
   thumbnail: any;
-  description: String;
+  description: string;
 }
 
 interface CarouselItemProps {

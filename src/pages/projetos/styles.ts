@@ -1,10 +1,19 @@
 import styled from "styled-components";
 
-export const MainContainer = styled.div`
+export const Container = styled.div`
   min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+`;
+
+export const Paragraph = styled.p`
+  color: ${(props) => props.theme.colors.secondary};
+  font-size: ${(props) => props.theme.fontSizes.medium};
+  text-align: justify;
+  padding: 0 4rem;
+
+  @media (max-width: 769px) {
+    font-size: ${(props) => props.theme.fontSizes.normal};
+    padding: 0 1rem;
+  }
 `;
 
 export const CarouselWrapper = styled.div``;

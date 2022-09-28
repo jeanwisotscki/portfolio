@@ -16,7 +16,7 @@ export const carouselData = [
   {
     href: "https://github.com/jeanwisotscki/my-todo",
     thumbnail: "/mytodo-screenshot.png",
-    title: "MY_TODO",
+    title: "MY TO_DO",
     description:
       "App do tipo lista de tarefas, com funções de drag & drop, desenvolvido com JavaScript puro, HTML5 e CSS.",
   },

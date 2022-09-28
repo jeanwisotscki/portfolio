@@ -2,29 +2,22 @@ import styled from "styled-components";
 
 export const CardWrapper = styled.div`
   color: ${(props) => props.theme.colors.secondary};
-  min-height: 17rem;
   width: 80%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   margin: 0 auto;
-  margin-bottom: 3rem;
-
-  @media (max-width: 769px) {
-    max-width: 17rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
+  padding: 1rem;
+  border: 2px solid ${(props) => props.theme.colors.purple};
 `;
 
 export const ImgWrapper = styled.div<{ thumbnail: string }>`
-  background-color: #333333;
+  width: 100%;
+  height: 13rem;
   background-image: url(${(props) => props.thumbnail});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
-  height: 100%;
 `;
 
 export const TextsWrapper = styled.div`

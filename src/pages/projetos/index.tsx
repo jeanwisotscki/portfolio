@@ -6,7 +6,7 @@ import { PageTitle } from "../../components/PageTitle";
 import { LayoutBase } from "../../components/LayoutBase";
 import { RedirectButton } from "../../components/RedirectButton";
 
-import { ButtonWrapper, CarouselWrapper, MainContainer } from "./styles";
+import { ButtonWrapper, CarouselWrapper, Container, Paragraph } from "./styles";
 
 //
 const Projetos = () => {
@@ -14,7 +14,12 @@ const Projetos = () => {
     <LayoutBase>
       <PageTitle title="Projetos" borderColor="purple" />
 
-      <MainContainer>
+      <Container>
+        <Paragraph>
+          Esses são alguns dos meus projetos, todos foram feitos única e
+          exclusivamente por mim, desde a criação do layout até a hospedagem.
+        </Paragraph>
+
         <CarouselWrapper>
           <Carousel />
         </CarouselWrapper>
@@ -35,7 +40,7 @@ const Projetos = () => {
             veja mais
           </RedirectButton>
         </ButtonWrapper>
-      </MainContainer>
+      </Container>
     </LayoutBase>
   );
 };
