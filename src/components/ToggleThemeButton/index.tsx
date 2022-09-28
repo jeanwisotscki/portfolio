@@ -22,10 +22,11 @@ export const ToggleThemeButton = () => {
     if (theme === "light") {
       setTheme("dark");
       localStorage.setItem("@theme", "dark");
-    } else {
-      setTheme("light");
-      localStorage.setItem("@theme", "light");
+      return;
     }
+
+    setTheme("light");
+    localStorage.setItem("@theme", "light");
   }
 
   return (
