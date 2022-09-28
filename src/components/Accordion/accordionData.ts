@@ -7,10 +7,11 @@ export const accordionData = [
   {
     question: "Breve descrição",
     answer:
-      "Conheci a programação recentemente, e desde então, descobri que sou apaixonado por resolver problemas.",
+      "Conheci a programação recentemente, e desde então, descobri que eu gosto muito de resolver problemas.",
   },
   {
     question: "Eu gosto de",
-    answer: "Aprender algo novo, assistir séries e filmes, games, música...",
+    answer:
+      "Aprender algo novo, assistir séries e filmes, jogar alguns games, comer churros e por aí vai...",
   },
 ];
