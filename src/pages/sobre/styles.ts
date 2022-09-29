@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  margin: 3rem 2rem;
+`;
 
-export const TextContainer = styled.div`
+export const TextContainer = styled.article`
   margin: 3rem 0;
 
   h2 {
@@ -24,8 +26,27 @@ export const TextContainer = styled.div`
       line-height: 0.9;
       margin-left: 0.5rem;
     }
+  }
 
-    @media (max-width: 769px) {
+  p {
+    color: ${(props) => props.theme.colors.secondary};
+    font-size: ${(props) => props.theme.fontSizes.smMedium};
+    text-align: justify;
+  }
+
+  a {
+    color: ${(props) => props.theme.colors.blue};
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 769px) {
+    margin: 1rem 0;
+
+    h2 {
       font-size: ${(props) => props.theme.fontSizes.medium};
 
       &::before {
@@ -36,23 +57,9 @@ export const TextContainer = styled.div`
         font-size: ${(props) => props.theme.fontSizes.medium};
       }
     }
-  }
-  p {
-    color: ${(props) => props.theme.colors.secondary};
-    font-size: ${(props) => props.theme.fontSizes.smMedium};
-    text-align: justify;
 
-    @media (max-width: 769px) {
+    p {
       font-size: ${(props) => props.theme.fontSizes.normal};
-    }
-  }
-
-  a {
-    color: ${(props) => props.theme.colors.blue};
-    font-weight: bold;
-
-    &:hover {
-      text-decoration: underline;
     }
   }
 `;
