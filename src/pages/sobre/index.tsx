@@ -43,7 +43,7 @@ const Sobre = () => {
           <br />
         </article>
         <article>
-          <h2>Minha trilha como programador</h2>
+          <h2>Minha trilha na programação</h2>
           <p>
             Em 2020, comecei a estudar algoritmos e estrutura de dados pelo
             youtube por incentivo de um amigo, porém, achei que aquilo não era
