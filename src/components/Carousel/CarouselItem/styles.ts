@@ -47,6 +47,7 @@ export const CardTitle = styled.h3`
 export const CardDescription = styled.div`
   display: flex;
   padding: 0.5rem;
+  text-align: justify;
 
   &::before {
     content: "~$";
