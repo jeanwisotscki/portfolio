@@ -21,6 +21,7 @@ export const lightTheme = {
   },
   fontSizes: {
     normal: "1rem",
+    smMedium: "1.25rem",
     medium: "1.5rem",
     large: "2rem",
     xtLarge: "3rem",
@@ -50,6 +51,7 @@ export const darkTheme = {
   },
   fontSizes: {
     normal: "1rem",
+    smMedium: "1.25rem",
     medium: "1.5rem",
     large: "2rem",
     xtLarge: "3rem",

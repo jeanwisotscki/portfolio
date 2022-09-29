@@ -33,14 +33,14 @@ export const Question = styled.h3`
   }
 
   @media (max-width: 769px) {
-    font-size: ${(props) => props.theme.fontSizes.normal};
+    font-size: ${(props) => props.theme.fontSizes.smMedium};
 
     &::before {
-      font-size: ${(props) => props.theme.fontSizes.normal};
+      font-size: ${(props) => props.theme.fontSizes.smMedium};
     }
 
     &::after {
-      font-size: ${(props) => props.theme.fontSizes.normal};
+      font-size: ${(props) => props.theme.fontSizes.smMedium};
     }
   }
 `;
@@ -57,13 +57,13 @@ export const IconWrapper = styled.div`
 
 export const Answer = styled.p`
   color: ${(props) => props.theme.colors.secondary};
-  font-size: ${(props) => props.theme.fontSizes.medium};
+  font-size: ${(props) => props.theme.fontSizes.smMedium};
   text-align: justify;
 
   &::before {
     content: "~$";
     color: ${(props) => props.theme.colors.pink};
-    font-size: ${(props) => props.theme.fontSizes.medium};
+    font-size: ${(props) => props.theme.fontSizes.smMedium};
     font-weight: bold;
     margin-right: 0.5rem;
   }
