@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin: 3rem 2rem;
+  margin: 3rem 0rem 4rem;
 `;
 
 export const TextContainer = styled.article`
