@@ -56,7 +56,7 @@ export const AccordionItem = (props: AccordionItemProps) => {
   const [showAnswer, setShowAnswer] = React.useState<null | number>(null);
 
   const toggle = (index: number) => {
-    // esconde a resposta, caso ela esteja visível
+    // esconde a resposta ao clicar, caso ela esteja visível
     if (showAnswer === index) return setShowAnswer(null);
 
     setShowAnswer(index);
@@ -74,7 +74,12 @@ export const AccordionItem = (props: AccordionItemProps) => {
           )}
         </IconWrapper>
       </QuestionWrapper>
-      {showAnswer === props.index ? <Answer>{props.answer}</Answer> : null}
+      {showAnswer === props.index ? (
+        <Answer>
+          {" "}
+          <p>{props.answer}</p>{" "}
+        </Answer>
+      ) : null}
     </Container>
   );
 };

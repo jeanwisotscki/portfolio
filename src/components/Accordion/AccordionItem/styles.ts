@@ -55,10 +55,10 @@ export const IconWrapper = styled.div`
   }
 `;
 
-export const Answer = styled.p`
-  color: ${(props) => props.theme.colors.secondary};
-  font-size: ${(props) => props.theme.fontSizes.smMedium};
-  text-align: justify;
+export const Answer = styled.div`
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 4rem;
 
   &::before {
     content: "~$";
@@ -68,10 +68,21 @@ export const Answer = styled.p`
     margin-right: 0.5rem;
   }
 
+  p {
+    color: ${(props) => props.theme.colors.secondary};
+    font-size: ${(props) => props.theme.fontSizes.smMedium};
+    text-align: justify;
+  }
+
   @media (max-width: 769px) {
-    font-size: ${(props) => props.theme.fontSizes.normal};
+    padding-left: 1rem;
+    padding-right: 2rem;
 
     &::before {
+      font-size: ${(props) => props.theme.fontSizes.normal};
+    }
+
+    p {
       font-size: ${(props) => props.theme.fontSizes.normal};
     }
   }
