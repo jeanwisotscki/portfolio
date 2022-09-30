@@ -15,13 +15,13 @@ const Sobre = () => {
       <TextContainer>
         <h2>Jean Wisotscki</h2>
         <p>
-          Estudante de Analise e Desenvolvimento de Sistemas pela UNINTER, em
+          Estudante de Análise e Desenvolvimento de Sistemas pela UNINTER, em
           busca da primeira oportunidade profissional na area.
         </p>
         <br />
         <p>
           Atualmente tenho focado os meus estudos na parte front-end, mais
-          precisamente, em{" "}
+          precisamente em{" "}
           <LinkButton href="https://nextjs.org/" textContent="Next.js" />,{" "}
           <LinkButton
             href="https://www.typescriptlang.org/"
