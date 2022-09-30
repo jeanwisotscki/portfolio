@@ -2,16 +2,16 @@ export const accordionData = [
   {
     question: "Antes de tudo",
     answer:
-      "Meu nome é Jean Wisotscki, tenho 26 anos e atualmente vivo em Santa Catarina.",
+      "Quero te agradecer por ter chegado até aqui, sou muito grato pelo seu tempo e por de alguma forma, você ter tido interesse no meu trabalho.",
   },
   {
-    question: "Breve descrição",
+    question: "Mas eu preciso te falar que",
     answer:
-      "Conheci a programação recentemente, e desde então, descobri que eu gosto muito de resolver problemas.",
+      "Não existe nenhuma métrica para as minhas habilidades e/ou conhecimentos aqui. Na minha visão, o conhecimento é imensurável e tentar medir ele, da forma que for, é um erro.",
   },
   {
-    question: "Eu gosto de",
+    question: "Dito isso",
     answer:
-      "Aprender algo novo, assistir séries e filmes, jogar alguns games, comer churros e por aí vai...",
+      "Eu sou um programador iniciante, porem bastante dedicado e disposto a aprender coisas novas. Eu me considero proativo e altruísta, diria que sou um curioso nato, talvez um pouco tímido num primeiro momento, bom ouvinte, bastante responsável e determinado, e com muito senso de equipe.",
   },
 ];
