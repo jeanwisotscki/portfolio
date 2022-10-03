@@ -30,7 +30,7 @@ const Projetos = () => {
             color="purple"
             icon={
               <Image
-                src={"/github-icon-purple.svg"}
+                src={"/svgs/github-icon-purple.svg"}
                 width={50}
                 height={50}
                 alt="github icon"

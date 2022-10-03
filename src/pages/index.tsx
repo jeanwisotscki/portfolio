@@ -54,7 +54,11 @@ const Home: NextPage = () => {
           <SeeMoreContainer>
             <a>Veja mais sobre mim</a>
             <Image
-              src={theme === "light" ? "/arrow-black.svg" : "/arrow-white.svg"}
+              src={
+                theme === "light"
+                  ? "/svgs/arrow-black.svg"
+                  : "/svgs/arrow-white.svg"
+              }
               width={15}
               height={15}
               alt="arrow icon"

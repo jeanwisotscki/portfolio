@@ -32,14 +32,14 @@ export const AccordionItem = (props: AccordionItemProps) => {
         <IconWrapper>
           {showAnswer !== null && showAnswer >= 0 ? (
             <Image
-              src="/arrow-up.svg"
+              src="/svgs/arrow-up.svg"
               width={25}
               height={25}
               alt="arrow up icon"
             />
           ) : (
             <Image
-              src="/arrow-down.svg"
+              src="/svgs/arrow-down.svg"
               width={25}
               height={25}
               alt="arrow down icon"

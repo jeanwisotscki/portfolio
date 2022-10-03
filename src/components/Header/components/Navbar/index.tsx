@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { ToggleThemeButton } from "../../../ToggleThemeButton";
+
+import { ToggleThemeButton } from "../ToggleThemeButton";
+
 import { Nav, NavLi, NavUl } from "./styles";
 
 export const Navbar = () => {

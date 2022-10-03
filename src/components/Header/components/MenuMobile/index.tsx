@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { Dispatch, SetStateAction } from "react";
-import { ToggleThemeButton } from "../../../ToggleThemeButton";
+
+import { ToggleThemeButton } from "../ToggleThemeButton";
 
 import { Container } from "./styles";
 

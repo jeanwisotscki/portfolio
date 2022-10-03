@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import { ThemeContext } from "../../contexts/ThemeContext";
+import { ThemeContext } from "../../../../contexts/ThemeContext";
 
 import styled from "styled-components";
 
@@ -32,7 +32,7 @@ export const ToggleThemeButton = () => {
   return (
     <Button onClick={toggleTheme}>
       <Image
-        src={theme === "light" ? "/sun.svg" : "/moon.svg"}
+        src={theme === "light" ? "/svgs/sun.svg" : "/svgs/moon.svg"}
         width={25}
         height={25}
         alt="sun or moon icon"

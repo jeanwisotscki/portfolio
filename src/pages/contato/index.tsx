@@ -18,7 +18,7 @@ const Contato = () => {
           color="red"
           icon={
             <Image
-              src={"/linkedin-icon.svg"}
+              src={"/svgs/linkedin-icon.svg"}
               width={50}
               height={50}
               alt="linkedin icon"
@@ -33,7 +33,7 @@ const Contato = () => {
           color="red"
           icon={
             <Image
-              src={"/github-icon.svg"}
+              src={"/svgs/github-icon.svg"}
               width={50}
               height={50}
               alt="github icon"
