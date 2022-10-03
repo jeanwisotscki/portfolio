@@ -48,14 +48,9 @@ export const Question = styled.h3`
 export const IconWrapper = styled.div`
   display: flex;
   align-items: center;
-
-  svg {
-    width: 30px;
-    color: ${(props) => props.theme.colors.blue};
-  }
 `;
 
-export const Answer = styled.div`
+export const AnswerWrapper = styled.div`
   display: flex;
   padding-left: 2rem;
   padding-right: 4rem;

@@ -1,5 +1,3 @@
-import React from "react";
-
 import { accordionData } from "./accordionData";
 import { AccordionItem } from "./AccordionItem";
 

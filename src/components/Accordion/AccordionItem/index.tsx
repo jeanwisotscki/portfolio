@@ -1,50 +1,13 @@
 import React from "react";
+import Image from "next/image";
 
 import {
-  Answer,
+  AnswerWrapper,
   Question,
   Container,
   QuestionWrapper,
   IconWrapper,
 } from "./styles";
-
-const ArrowDownIcon = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="currentColor"
-      className="w-6 h-6"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
-      />
-    </svg>
-  );
-};
-
-const ArrowUpIcon = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="currentColor"
-      className="w-6 h-6"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5"
-      />
-    </svg>
-  );
-};
 
 interface AccordionItemProps {
   index: number;
@@ -68,17 +31,26 @@ export const AccordionItem = (props: AccordionItemProps) => {
         <Question>{props.question}</Question>
         <IconWrapper>
           {showAnswer !== null && showAnswer >= 0 ? (
-            <ArrowUpIcon />
+            <Image
+              src="/arrow-up.svg"
+              width={25}
+              height={25}
+              alt="arrow up icon"
+            />
           ) : (
-            <ArrowDownIcon />
+            <Image
+              src="/arrow-down.svg"
+              width={25}
+              height={25}
+              alt="arrow down icon"
+            />
           )}
         </IconWrapper>
       </QuestionWrapper>
       {showAnswer === props.index ? (
-        <Answer>
-          {" "}
-          <p>{props.answer}</p>{" "}
-        </Answer>
+        <AnswerWrapper>
+          <p>{props.answer}</p>
+        </AnswerWrapper>
       ) : null}
     </Container>
   );
