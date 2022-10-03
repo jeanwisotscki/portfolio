@@ -87,10 +87,11 @@ const Sobre = () => {
         <p>
           Em 2022, me matriculei na faculdade e passei a me dedicar de verdade
           nos estudos. Terminei o curso de <strong>React</strong>, comecei fazer
-          os meus próprios projetos e a coloca-los no github, aprendi um pouco
-          sobre o framework{" "}
-          <LinkButton href="https://nextjs.org/" textContent="Next.js" /> e os
-          conceitos de <strong>SSR (Server Side Rendering)</strong>, comecei os
+          os meus próprios projetos e a coloca-los no github, iniciei os estudos
+          no framework{" "}
+          <LinkButton href="https://nextjs.org/" textContent="Next.js" /> e
+          entendi um pouco mais sobre os conceitos de{" "}
+          <strong>SSR (Server Side Rendering)</strong>, também comecei os
           estudos em{" "}
           <LinkButton
             href="https://www.typescriptlang.org/"
@@ -104,7 +105,7 @@ const Sobre = () => {
           , com os quais sigo firme até então.
         </p>
         <br />
-        <p>E por fim, cá estou eu, ansioso para fazer parte da equipe.</p>
+        <p>E por fim, cá estou eu, ansioso para podermos conversar mais. 😄</p>
       </TextContainer>
     </LayoutBase>
   );
