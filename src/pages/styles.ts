@@ -70,9 +70,7 @@ export const Description = styled.div`
 
   a {
     color: ${(props) => props.theme.colors.green};
-    margin: 0 0.5rem;
     text-decoration: underline;
-    transition: 0.3s;
   }
 
   @media (max-width: 769px) {

@@ -43,12 +43,10 @@ const Home: NextPage = () => {
             Desenvolvimento de Sistemas e apaixonado por tecnologia.
           </p>
           <p>
-            Sinta-se a vontade para conferir os meus
-            <LinkButton href="/projetos" textContent="projetos," />
-            a seção
-            <LinkButton href="/sobre" textContent="sobre" />
-            ou, se preferir, ir direto para
-            <LinkButton href="/contato" textContent="contato." />
+            Sinta-se a vontade para conferir os meus{" "}
+            <LinkButton href="/projetos" textContent="projetos" />, a seção{" "}
+            <LinkButton href="/sobre" textContent="sobre" /> ou, se preferir, ir
+            direto para <LinkButton href="/contato" textContent="contato" />.
           </p>
         </Description>
 
