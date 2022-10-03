@@ -1,5 +1,12 @@
 export const carouselData = [
   {
+    href: "https://github.com/jeanwisotscki/portfolio",
+    thumbnail: "/screenshots/portfolio-screenshot.png",
+    title: "Portfolio",
+    description:
+      "Meu site portfólio, feito principalmente com Next.js, TypeScript e Styled-components.",
+  },
+  {
     href: "https://github.com/jeanwisotscki/PokeNEXT",
     thumbnail: "/screenshots/pokenext-screenshot.png",
     title: "PokeNEXT",
