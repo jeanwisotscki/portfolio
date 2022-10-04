@@ -50,20 +50,22 @@ const Home: NextPage = () => {
           </p>
         </Description>
 
-        <SeeMoreContainer>
-          <a href="/sobre">Veja mais sobre mim</a>
-          <Image
-            src={
-              theme === "light"
-                ? "/svgs/arrow-black.svg"
-                : "/svgs/arrow-white.svg"
-            }
-            width={15}
-            height={15}
-            layout="fixed"
-            alt="arrow icon"
-          />
-        </SeeMoreContainer>
+        <Link href="/sobre">
+          <SeeMoreContainer>
+            <span>Veja mais sobre mim</span>
+            <Image
+              src={
+                theme === "light"
+                  ? "/svgs/arrow-black.svg"
+                  : "/svgs/arrow-white.svg"
+              }
+              width={15}
+              height={15}
+              layout="fixed"
+              alt="arrow icon"
+            />
+          </SeeMoreContainer>
+        </Link>
       </Container>
     </LayoutBase>
   );

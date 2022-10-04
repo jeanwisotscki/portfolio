@@ -80,6 +80,7 @@ export const Description = styled.div`
 `;
 
 export const SeeMoreContainer = styled.div`
+  max-width: 190px;
   display: flex;
   align-items: center;
   margin-top: 3rem;
@@ -87,7 +88,7 @@ export const SeeMoreContainer = styled.div`
   transition: 0.3s;
   cursor: pointer;
 
-  a {
+  span {
     color: ${(props) => props.theme.colors.primary};
     position: relative;
 
@@ -107,7 +108,7 @@ export const SeeMoreContainer = styled.div`
   &:hover {
     gap: 1rem;
 
-    a {
+    span {
       &::before {
         width: 100%;
       }
