@@ -18,6 +18,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Meu site portfólio, feito com Next.js, TypeScript e Styled-components"
         />
 
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+
         <title>Jean Wisotscki | Portfólio</title>
       </Head>
       <GlobalStyle />
