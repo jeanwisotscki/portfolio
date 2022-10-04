@@ -35,6 +35,7 @@ export const ToggleThemeButton = () => {
         src={theme === "light" ? "/svgs/sun.svg" : "/svgs/moon.svg"}
         width={25}
         height={25}
+        layout="fixed"
         alt="sun or moon icon"
         title="Trocar de tema"
       />
