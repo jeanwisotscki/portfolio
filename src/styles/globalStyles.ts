@@ -60,5 +60,4 @@ export const GlobalStyle = createGlobalStyle`
     width: 15px;
     background-color: #b93bf4 !important;
   }
-
 `;
