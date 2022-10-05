@@ -12,12 +12,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
         <meta
           name="description"
           content="Meu site portfólio, feito com Next.js, TypeScript e Styled-components"
         />
-
         <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
 
         <title>Jean Wisotscki | Portfólio</title>

@@ -14,13 +14,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-  scrollbar-width: thin;
-  scrollbar-color: #333 #aaa;
+    scrollbar-width: thin; /* firefox */
+    scrollbar-color: #333 #aaa; /* firefox */
   }
 
   body::-webkit-scrollbar {
     width: 3px;
-    height: 3px; /* A altura só é vista quando a rolagem é horizontal */
   }
 
   body::-webkit-scrollbar-track {
