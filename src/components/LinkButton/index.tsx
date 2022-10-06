@@ -5,6 +5,6 @@ interface LinkButtonProps {
   textContent: string;
 }
 
-export default function LinkButton(props: LinkButtonProps) {
+export const LinkButton = (props: LinkButtonProps) => {
   return <Link href={props.href}>{props.textContent}</Link>;
-}
+};

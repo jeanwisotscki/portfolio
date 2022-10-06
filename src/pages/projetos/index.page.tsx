@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Image from "next/image";
 
 import { Carousel } from "../../components/Carousel";
@@ -11,37 +12,42 @@ import { ButtonWrapper, CarouselWrapper, Container, Paragraph } from "./styles";
 //
 const Projetos = () => {
   return (
-    <LayoutBase>
-      <PageTitle title="Projetos" borderColor="purple" />
+    <>
+      <Head>
+        <title>Jean Wisotscki | Projetos</title>
+      </Head>
+      <LayoutBase>
+        <PageTitle title="Projetos" borderColor="purple" />
 
-      <Container>
-        <Paragraph>
-          Esses são alguns dos meus projetos, todos foram feitos única e
-          exclusivamente por mim, desde a criação do layout até a hospedagem.
-        </Paragraph>
+        <Container>
+          <Paragraph>
+            Esses são alguns dos meus projetos, todos foram feitos única e
+            exclusivamente por mim, desde a criação do layout até a hospedagem.
+          </Paragraph>
 
-        <CarouselWrapper>
-          <Carousel />
-        </CarouselWrapper>
+          <CarouselWrapper>
+            <Carousel />
+          </CarouselWrapper>
 
-        <ButtonWrapper>
-          <RedirectButton
-            href="https://github.com/jeanwisotscki/"
-            color="purple"
-            icon={
-              <Image
-                src={"/svgs/github-icon-purple.svg"}
-                width={50}
-                height={50}
-                alt="github icon"
-              />
-            }
-          >
-            veja mais
-          </RedirectButton>
-        </ButtonWrapper>
-      </Container>
-    </LayoutBase>
+          <ButtonWrapper>
+            <RedirectButton
+              href="https://github.com/jeanwisotscki/"
+              color="purple"
+              icon={
+                <Image
+                  src={"/svgs/github-icon-purple.svg"}
+                  width={50}
+                  height={50}
+                  alt="github icon"
+                />
+              }
+            >
+              veja mais
+            </RedirectButton>
+          </ButtonWrapper>
+        </Container>
+      </LayoutBase>
+    </>
   );
 };
 
