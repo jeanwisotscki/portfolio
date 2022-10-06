@@ -11,8 +11,8 @@ import { ContentContainer, HeaderContainer } from "./styles";
 export const Header = () => {
   const mediaIsMatched = useMediaQuery("(max-width: 769px)");
 
+  const [isMobile, setIsMobile] = React.useState(true);
   const [menuIsOpen, setMenuIsOpen] = React.useState(false);
-  const [isMobile, setIsMobile] = React.useState<boolean | null>(null);
 
   React.useEffect(() => {
     const screenWidth = window.innerWidth;
