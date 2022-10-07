@@ -4,7 +4,6 @@ import Image from "next/image";
 import {
   AnswerWrapper,
   Question,
-  Container,
   QuestionWrapper,
   IconWrapper,
 } from "./styles";
@@ -26,7 +25,7 @@ export const AccordionItem = (props: AccordionItemProps) => {
   };
 
   return (
-    <Container>
+    <>
       <QuestionWrapper onClick={() => toggle(props.index)}>
         <Question>{props.question}</Question>
         <IconWrapper>
@@ -52,6 +51,6 @@ export const AccordionItem = (props: AccordionItemProps) => {
           <p>{props.answer}</p>
         </AnswerWrapper>
       ) : null}
-    </Container>
+    </>
   );
 };

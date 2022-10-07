@@ -12,7 +12,6 @@ const Button = styled.button`
   justify-content: center;
   border: none;
   outline: none;
-  transition: 0.3s;
 `;
 
 export const ToggleThemeButton = () => {
@@ -36,7 +35,7 @@ export const ToggleThemeButton = () => {
         width={25}
         height={25}
         layout="fixed"
-        alt="sun or moon icon"
+        alt={theme === "light" ? "small sun icon" : "small moon icon"}
         title="Trocar de tema"
       />
     </Button>
