@@ -6,6 +6,10 @@ import ThemeContextProvider from "../contexts/ThemeContext";
 import { GlobalStyle } from "../styles/globalStyles";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  console.log(
+    "E é claro que eu não poderia perder a chance de me divulgar aqui também 😁 \n\nLINKEDIN: https://www.linkedin.com/in/jean-wisotscki/"
+  );
+
   return (
     <ThemeContextProvider>
       <GlobalStyle />

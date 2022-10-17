@@ -20,7 +20,9 @@ Confira o resultado [clicando aqui](https://portfolio-jeanwisotscki.vercel.app/)
 ## Techs usadas no desenvolvimento
 
 - Next.js
+- React
 - TypeScript
+- JavaScript
 - Styled-components
 - GIT
 
