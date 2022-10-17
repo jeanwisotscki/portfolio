@@ -14,6 +14,13 @@ export const carouselData = [
       "Minha primeira aplicação com o framework Next.js. App para consultas de pokemons por nome ou número, usando a api PokeAPI.",
   },
   {
+    href: "https://github.com/jeanwisotscki/char-replacer",
+    thumbnail: "/screenshots/char-screenshot.png",
+    title: "CHAR_Replacer",
+    description:
+      "App que faz a substituição de um ou mais caracteres por outros escolhidos pelo usuário. Feito com TypeScript, React e CSS Module.",
+  },
+  {
     href: "https://github.com/jeanwisotscki/buscacep-react",
     thumbnail: "/screenshots/buscacep-screenshot.png",
     title: "BuscaCEP-Brasil",
