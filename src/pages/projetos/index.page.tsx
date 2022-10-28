@@ -20,8 +20,9 @@ const Projetos = () => {
 
         <Atom.Container>
           <Atom.Paragraph>
-            Esses são alguns dos meus projetos, todos foram feitos única e
-            exclusivamente por mim, desde a criação do layout até a hospedagem.
+            Aqui estão alguns dos meus projetos práticos. Ao clicar em algum,
+            abrirá uma nova guia que leva diretamente ao repositório do projeto
+            no github.
           </Atom.Paragraph>
 
           <Atom.CarouselWrapper>
