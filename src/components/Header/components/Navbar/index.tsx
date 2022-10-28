@@ -2,38 +2,40 @@ import Link from "next/link";
 
 import { ToggleThemeButton } from "../ToggleThemeButton";
 
-import { Nav, NavLi, NavUl } from "./styles";
+import * as Atom from "./styles";
 
 export const Navbar = () => {
   return (
-    <Nav>
-      <NavUl>
-        <NavLi>
+    <Atom.Nav>
+      <Atom.NavUl>
+        <Atom.NavLi>
           <Link href="/">
             <a>Home</a>
           </Link>
-        </NavLi>
+        </Atom.NavLi>
 
-        <NavLi>
+        <Atom.NavLi>
           <Link href="/projetos">
             <a>Projetos</a>
           </Link>
-        </NavLi>
-        <NavLi>
+        </Atom.NavLi>
+
+        <Atom.NavLi>
           <Link href="/sobre">
             <a>Sobre</a>
           </Link>
-        </NavLi>
-        <NavLi>
+        </Atom.NavLi>
+
+        <Atom.NavLi>
           <Link href="/contato">
             <a>Contato</a>
           </Link>
-        </NavLi>
+        </Atom.NavLi>
 
-        <NavLi>
+        <Atom.NavLi>
           <ToggleThemeButton />
-        </NavLi>
-      </NavUl>
-    </Nav>
+        </Atom.NavLi>
+      </Atom.NavUl>
+    </Atom.Nav>
   );
 };

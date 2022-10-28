@@ -1,5 +1,5 @@
-import Link from "next/link";
 import React, { Dispatch, SetStateAction } from "react";
+import Link from "next/link";
 
 import { ToggleThemeButton } from "../ToggleThemeButton";
 

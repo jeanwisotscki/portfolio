@@ -6,7 +6,7 @@ import { MenuMobile } from "./components/MenuMobile";
 
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 
-import { ContentContainer, HeaderContainer } from "./styles";
+import * as Atom from "./styles";
 
 export const Header = () => {
   const mediaIsMatched = useMediaQuery("(max-width: 769px)");
@@ -26,8 +26,8 @@ export const Header = () => {
   }, [mediaIsMatched]);
 
   return (
-    <HeaderContainer>
-      <ContentContainer>
+    <Atom.HeaderContainer>
+      <Atom.ContentContainer>
         <Logo />
 
         {isMobile ? (
@@ -35,7 +35,7 @@ export const Header = () => {
         ) : (
           <Navbar />
         )}
-      </ContentContainer>
-    </HeaderContainer>
+      </Atom.ContentContainer>
+    </Atom.HeaderContainer>
   );
 };
