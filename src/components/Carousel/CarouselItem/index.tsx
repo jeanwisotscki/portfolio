@@ -1,12 +1,6 @@
 import React from "react";
 
-import {
-  CardDescription,
-  CardTitle,
-  CardWrapper,
-  ImgWrapper,
-  TextsWrapper,
-} from "./styles";
+import * as Atom from "./styles";
 
 interface CardInfos {
   href: string;
@@ -22,19 +16,19 @@ interface CarouselItemProps {
 export const CarouselItem = ({ data }: CarouselItemProps) => {
   return (
     <a href={data.href} rel="noreferrer" target="_blank">
-      <CardWrapper>
-        <ImgWrapper thumbnail={data.thumbnail}></ImgWrapper>
+      <Atom.CardWrapper>
+        <Atom.ImgWrapper thumbnail={data.thumbnail}></Atom.ImgWrapper>
 
-        <TextsWrapper>
-          <CardTitle>
+        <Atom.TextsWrapper>
+          <Atom.CardTitle>
             <span>./</span> {data.title}
-          </CardTitle>
+          </Atom.CardTitle>
 
-          <CardDescription>
+          <Atom.CardDescription>
             <p>{data.description}</p>
-          </CardDescription>
-        </TextsWrapper>
-      </CardWrapper>
+          </Atom.CardDescription>
+        </Atom.TextsWrapper>
+      </Atom.CardWrapper>
     </a>
   );
 };

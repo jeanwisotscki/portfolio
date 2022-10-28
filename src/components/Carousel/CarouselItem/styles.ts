@@ -33,6 +33,12 @@ export const TextsWrapper = styled.div`
 `;
 
 export const CardTitle = styled.h3`
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
   span {
     color: ${(props) => props.theme.colors.yellow};
   }
@@ -53,5 +59,13 @@ export const CardDescription = styled.div`
     content: "~$";
     color: ${(props) => props.theme.colors.pink};
     margin-right: 0.5rem;
+  }
+
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
   }
 `;
