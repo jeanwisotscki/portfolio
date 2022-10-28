@@ -9,14 +9,7 @@ import { LinkButton } from "../components/LinkButton";
 import { LayoutBase } from "../components/LayoutBase";
 import { ThemeContext } from "../contexts/ThemeContext";
 
-import {
-  Container,
-  Stacks,
-  Description,
-  Header,
-  Presentation,
-  SeeMoreContainer,
-} from "./styles";
+import * as Atom from "./styles";
 
 const Home: NextPage = () => {
   const { theme } = React.useContext(ThemeContext);
@@ -27,22 +20,22 @@ const Home: NextPage = () => {
         <title>Jean Wisotscki | Home</title>
       </Head>
       <LayoutBase>
-        <Container>
-          <Header>
-            <Presentation>
+        <Atom.Container>
+          <Atom.Header>
+            <Atom.Presentation>
               <span>Olá 👋</span>
               <div>
                 <span>eu sou </span>
                 <strong>Jean Wisotscki</strong>
               </div>
-            </Presentation>
-            <Stacks>
+            </Atom.Presentation>
+            <Atom.Stacks>
               React | Next.js | TypeScript | JavaScript | Styled-components |
               SASS/SCSS
-            </Stacks>
-          </Header>
+            </Atom.Stacks>
+          </Atom.Header>
 
-          <Description>
+          <Atom.Description>
             <p>
               Desenvolvedor front-end em formação, estudante de Análise e
               Desenvolvimento de Sistemas e apaixonado por tecnologia.
@@ -54,10 +47,10 @@ const Home: NextPage = () => {
               ir direto para{" "}
               <LinkButton href="/contato" textContent="contato" />.
             </p>
-          </Description>
+          </Atom.Description>
 
           <Link href="/sobre">
-            <SeeMoreContainer>
+            <Atom.SeeMoreContainer>
               <span>Veja mais sobre mim</span>
               <Image
                 src={
@@ -70,9 +63,9 @@ const Home: NextPage = () => {
                 layout="fixed"
                 alt="arrow icon"
               />
-            </SeeMoreContainer>
+            </Atom.SeeMoreContainer>
           </Link>
-        </Container>
+        </Atom.Container>
       </LayoutBase>
     </>
   );

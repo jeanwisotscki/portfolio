@@ -5,7 +5,7 @@ import { PageTitle } from "../../components/PageTitle";
 import { LayoutBase } from "../../components/LayoutBase";
 import { RedirectButton } from "../../components/RedirectButton";
 
-import { Container, SubTitle } from "./styles";
+import * as Atom from "./styles";
 
 const Contato = () => {
   return (
@@ -15,9 +15,11 @@ const Contato = () => {
       </Head>
       <LayoutBase>
         <PageTitle title="Contato" borderColor="red" />
-        <SubTitle>Curtiu o meu trabalho ou quer conversar comigo?</SubTitle>
+        <Atom.SubTitle>
+          Curtiu o meu trabalho ou quer conversar comigo?
+        </Atom.SubTitle>
 
-        <Container>
+        <Atom.Container>
           <RedirectButton
             href="https://www.linkedin.com/in/jean-wisotscki/"
             color="red"
@@ -47,7 +49,7 @@ const Contato = () => {
           >
             github
           </RedirectButton>
-        </Container>
+        </Atom.Container>
       </LayoutBase>
     </>
   );

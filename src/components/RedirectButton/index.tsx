@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-import { Button, ButtonWrapper, IconWrapper } from "./styles";
+import * as Atom from "./styles";
 
 interface RedirectButtonProps {
   href: string;
@@ -12,10 +12,10 @@ interface RedirectButtonProps {
 export const RedirectButton = (props: RedirectButtonProps) => {
   return (
     <a href={props.href} rel="noreferrer" target="_blank">
-      <ButtonWrapper borderColor={props.color}>
-        <Button color={props.color}>{props.children}</Button>
-        <IconWrapper>{props.icon}</IconWrapper>
-      </ButtonWrapper>
+      <Atom.ButtonWrapper borderColor={props.color}>
+        <Atom.Button color={props.color}>{props.children}</Atom.Button>
+        <Atom.IconWrapper>{props.icon}</Atom.IconWrapper>
+      </Atom.ButtonWrapper>
     </a>
   );
 };

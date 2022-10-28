@@ -6,7 +6,7 @@ import { PageTitle } from "../../components/PageTitle";
 import { LinkButton } from "../../components/LinkButton";
 import { LayoutBase } from "../../components/LayoutBase";
 
-import { Container, TextContainer } from "./styles";
+import * as Atom from "./styles";
 
 const Sobre = () => {
   return (
@@ -17,7 +17,7 @@ const Sobre = () => {
       <LayoutBase>
         <PageTitle title="Sobre" borderColor="blue" />
 
-        <TextContainer>
+        <Atom.TextContainer>
           <h2>Jean Wisotscki</h2>
           <p>
             Estudante de Análise e Desenvolvimento de Sistemas pela UNINTER, em
@@ -40,13 +40,13 @@ const Sobre = () => {
             .
           </p>
           <br />
-        </TextContainer>
+        </Atom.TextContainer>
 
-        <Container>
+        <Atom.Container>
           <Accordion />
-        </Container>
+        </Atom.Container>
 
-        <TextContainer>
+        <Atom.TextContainer>
           <h2>Minha trilha na programação</h2>
           <p>
             Em 2020, comecei a estudar algoritmos e estrutura de dados pelo
@@ -118,7 +118,7 @@ const Sobre = () => {
           <p>
             E por fim, cá estou eu, ansioso para podermos conversar mais. 😄
           </p>
-        </TextContainer>
+        </Atom.TextContainer>
       </LayoutBase>
     </>
   );

@@ -7,9 +7,8 @@ import { PageTitle } from "../../components/PageTitle";
 import { LayoutBase } from "../../components/LayoutBase";
 import { RedirectButton } from "../../components/RedirectButton";
 
-import { ButtonWrapper, CarouselWrapper, Container, Paragraph } from "./styles";
+import * as Atom from "./styles";
 
-//
 const Projetos = () => {
   return (
     <>
@@ -19,17 +18,17 @@ const Projetos = () => {
       <LayoutBase>
         <PageTitle title="Projetos" borderColor="purple" />
 
-        <Container>
-          <Paragraph>
+        <Atom.Container>
+          <Atom.Paragraph>
             Esses são alguns dos meus projetos, todos foram feitos única e
             exclusivamente por mim, desde a criação do layout até a hospedagem.
-          </Paragraph>
+          </Atom.Paragraph>
 
-          <CarouselWrapper>
+          <Atom.CarouselWrapper>
             <Carousel />
-          </CarouselWrapper>
+          </Atom.CarouselWrapper>
 
-          <ButtonWrapper>
+          <Atom.ButtonWrapper>
             <RedirectButton
               href="https://github.com/jeanwisotscki/"
               color="purple"
@@ -44,8 +43,8 @@ const Projetos = () => {
             >
               veja mais
             </RedirectButton>
-          </ButtonWrapper>
-        </Container>
+          </Atom.ButtonWrapper>
+        </Atom.Container>
       </LayoutBase>
     </>
   );
