@@ -1,12 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import {
-  AnswerWrapper,
-  Question,
-  QuestionWrapper,
-  IconWrapper,
-} from "./styles";
+import * as Atom from "./styles";
 
 interface AccordionItemProps {
   index: number;
@@ -26,9 +21,9 @@ export const AccordionItem = (props: AccordionItemProps) => {
 
   return (
     <>
-      <QuestionWrapper onClick={() => toggle(props.index)}>
-        <Question>{props.question}</Question>
-        <IconWrapper>
+      <Atom.QuestionWrapper onClick={() => toggle(props.index)}>
+        <Atom.Question>{props.question}</Atom.Question>
+        <Atom.IconWrapper>
           {showAnswer !== null && showAnswer >= 0 ? (
             <Image
               src="/svgs/arrow-up.svg"
@@ -44,12 +39,12 @@ export const AccordionItem = (props: AccordionItemProps) => {
               alt="arrow down icon"
             />
           )}
-        </IconWrapper>
-      </QuestionWrapper>
+        </Atom.IconWrapper>
+      </Atom.QuestionWrapper>
       {showAnswer === props.index ? (
-        <AnswerWrapper>
+        <Atom.AnswerWrapper>
           <p>{props.answer}</p>
-        </AnswerWrapper>
+        </Atom.AnswerWrapper>
       ) : null}
     </>
   );
