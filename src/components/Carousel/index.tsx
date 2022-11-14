@@ -3,7 +3,7 @@ import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { CarouselItem } from "./CarouselItem";
-import { carouselData } from "./carouselData";
+import { carouselData } from "../../data/carouselData";
 
 import "swiper/css";
 import "swiper/css/pagination";

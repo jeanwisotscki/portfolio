@@ -1,4 +1,4 @@
-import { accordionData } from "./accordionData";
+import { accordionData } from "../../data/accordionData";
 import { AccordionItem } from "./AccordionItem";
 
 export const Accordion = () => {
