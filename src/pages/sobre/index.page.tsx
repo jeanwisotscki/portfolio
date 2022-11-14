@@ -49,30 +49,34 @@ const Sobre = () => {
         <Atom.TextContainer>
           <h2>Minha trilha na programação</h2>
           <p>
-            Em 2020, comecei a estudar algoritmos e estrutura de dados pelo
-            youtube por incentivo de um amigo, porém, achei que aquilo não era
-            pra mim e logo desisti. Um tempo se passou e em 2021 eu resolvi
-            voltar e tentar de novo, foi aí que eu encontrei o canal{" "}
+            Em 2020 comecei a estudar algoritmos e estrutura de dados pelo
+            youtube, por incentivo de um amigo. Poucos dias após iniciar os
+            estudos, achei que aquilo não era pra mim e logo desisti. Fiquei um
+            tempo sem estudar absolutamente nada sobre programação, mas em 2021
+            eu resolvi voltar e tentar de novo. Após uma breve busca no youtube,
+            encontrei o canal{" "}
             <LinkButton
               href="https://www.youtube.com/c/CursoemV%C3%ADdeo"
               textContent="Curso em Video"
             />{" "}
-            e tive meu primeiro contato com <strong>Python</strong> e entendi um
-            pouco mais sobre lógica de programação.
+            e tive meu primeiro contato com <strong>Python</strong> e lógica de
+            programação.
           </p>
           <br />
           <p>
-            Estudei Python por alguns meses e comecei a sentir a necessidade de
-            algo mais palpável. Foi aí que eu comecei a aprender sobre{" "}
-            <strong>HTML</strong>, <strong>CSS</strong> e{" "}
+            Estudei lógica de programação com <strong>Python</strong> por alguns
+            meses, até que comecei a sentir a necessidade de algo mais
+            &quot;palpável&quot; ou que pelo menos fizesse mais sentido para
+            mim. Nesse momento, eu conheci a trindade do desenvolvimento
+            front-end: <strong>HTML</strong>, <strong>CSS</strong> e{" "}
             <strong>JavaScript</strong>. Passei alguns meses estudando essas
-            tecnologias e foi no meio desse caminho que conheci{" "}
-            <strong>GIT</strong> e comecei a criar os repositórios dos meus
-            projetos de estudo.
+            tecnologias, e no meio desse caminho conheci <strong>GIT</strong> e
+            comecei a criar os repositórios dos meus projetos de estudo no{" "}
+            <strong>GitHub</strong>.
           </p>
           <br />
           <p>
-            Pouco tempo depois adquiri os cursos da{" "}
+            Pouco tempo depois, adquiri os cursos da{" "}
             <LinkButton
               href="https://www.origamid.com/"
               textContent="Origamid"
@@ -89,7 +93,7 @@ const Sobre = () => {
             voilà! Estava pronta a receita para me fazer, mais uma vez,
             desistir. Mas não por muito tempo, só até eu conseguir me organizar
             melhor com o trabalho. Perto do final de 2021 eu retornei aos
-            estudos, dessa vez focado em aprender{" "}
+            estudos, e dessa vez focado em aprender{" "}
             <LinkButton href="https://pt-br.reactjs.org/" textContent="React" />
             .
           </p>
@@ -97,11 +101,11 @@ const Sobre = () => {
           <p>
             Em 2022, me matriculei na faculdade e passei a me dedicar de verdade
             nos estudos. Terminei o curso de <strong>React</strong>, comecei
-            fazer os meus próprios projetos e a coloca-los no github, iniciei os
-            estudos no framework{" "}
+            fazer os meus próprios projetos e a coloca-los no{" "}
+            <strong>GitHub</strong>, iniciei os estudos no framework{" "}
             <LinkButton href="https://nextjs.org/" textContent="Next.js" /> e
             entendi um pouco mais sobre os conceitos de{" "}
-            <strong>SSR (Server Side Rendering)</strong>, também comecei os
+            <strong>SSR (Server Side Rendering)</strong>. Também comecei os
             estudos em{" "}
             <LinkButton
               href="https://www.typescriptlang.org/"
