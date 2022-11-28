@@ -10,6 +10,7 @@ import { LayoutBase } from "../components/LayoutBase";
 import { ThemeContext } from "../contexts/ThemeContext";
 
 import * as Atom from "./styles";
+import { GlitchText } from "../components/GlitchText";
 
 const Home: NextPage = () => {
   const { theme } = React.useContext(ThemeContext);
@@ -26,7 +27,7 @@ const Home: NextPage = () => {
               <span>Olá 👋</span>
               <div>
                 <span>eu sou </span>
-                <strong>Jean Wisotscki</strong>
+                <GlitchText text="Jean Wisotscki" />
               </div>
             </Atom.Presentation>
             <Atom.Stacks>
