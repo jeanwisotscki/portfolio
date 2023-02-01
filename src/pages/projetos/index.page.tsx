@@ -2,12 +2,8 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 
-import { Carousel } from "../../components/Carousel";
-import { PageTitle } from "../../components/PageTitle";
-import { LayoutBase } from "../../components/LayoutBase";
-import { RedirectButton } from "../../components/RedirectButton";
-
 import * as Atom from "./styles";
+import * as Comp from "../../components";
 
 const Projetos = () => {
   return (
@@ -15,8 +11,8 @@ const Projetos = () => {
       <Head>
         <title>Jean Wisotscki | Projetos</title>
       </Head>
-      <LayoutBase>
-        <PageTitle title="Projetos" borderColor="purple" />
+      <Comp.LayoutBase>
+        <Comp.PageTitle title="Projetos" borderColor="purple" />
 
         <Atom.Container>
           <Atom.Paragraph>
@@ -26,11 +22,11 @@ const Projetos = () => {
           </Atom.Paragraph>
 
           <Atom.CarouselWrapper>
-            <Carousel />
+            <Comp.Carousel />
           </Atom.CarouselWrapper>
 
           <Atom.ButtonWrapper>
-            <RedirectButton
+            <Comp.RedirectButton
               href="https://github.com/jeanwisotscki/"
               color="purple"
               icon={
@@ -43,10 +39,10 @@ const Projetos = () => {
               }
             >
               veja mais
-            </RedirectButton>
+            </Comp.RedirectButton>
           </Atom.ButtonWrapper>
         </Atom.Container>
-      </LayoutBase>
+      </Comp.LayoutBase>
     </>
   );
 };

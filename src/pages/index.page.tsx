@@ -5,12 +5,9 @@ import Image from "next/image";
 
 import type { NextPage } from "next";
 
-import { LinkButton } from "../components/LinkButton";
-import { LayoutBase } from "../components/LayoutBase";
-import { ThemeContext } from "../contexts/ThemeContext";
-
 import * as Atom from "./styles";
-import { GlitchText } from "../components/GlitchText";
+import * as Comp from "../components";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 const Home: NextPage = () => {
   const { theme } = React.useContext(ThemeContext);
@@ -20,14 +17,15 @@ const Home: NextPage = () => {
       <Head>
         <title>Jean Wisotscki | Home</title>
       </Head>
-      <LayoutBase>
+
+      <Comp.LayoutBase>
         <Atom.Container>
           <Atom.Header>
             <Atom.Presentation>
               <span>Olá 👋</span>
               <div>
                 <span>eu sou </span>
-                <GlitchText text="Jean Wisotscki" />
+                <Comp.GlitchText text="Jean Wisotscki" />
               </div>
             </Atom.Presentation>
             <Atom.Stacks>
@@ -43,10 +41,10 @@ const Home: NextPage = () => {
             </p>
             <p>
               Sinta-se a vontade para conferir os meus{" "}
-              <LinkButton href="/projetos" textContent="projetos" />, a seção{" "}
-              <LinkButton href="/sobre" textContent="sobre" /> ou, se preferir,
-              ir direto para{" "}
-              <LinkButton href="/contato" textContent="contato" />.
+              <Comp.LinkButton href="/projetos" textContent="projetos" />, a
+              seção <Comp.LinkButton href="/sobre" textContent="sobre" /> ou, se
+              preferir, ir direto para{" "}
+              <Comp.LinkButton href="/contato" textContent="contato" />.
             </p>
           </Atom.Description>
 
@@ -67,7 +65,7 @@ const Home: NextPage = () => {
             </Atom.SeeMoreContainer>
           </Link>
         </Atom.Container>
-      </LayoutBase>
+      </Comp.LayoutBase>
     </>
   );
 };

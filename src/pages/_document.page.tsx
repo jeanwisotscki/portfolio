@@ -44,10 +44,6 @@ export default class MyDocument extends Document {
           <meta charSet="UTF-8" />
           <meta name="robots" content="all" />
           <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <meta
             name="description"
             content="Meu site portfólio, feito com Next.js, TypeScript e Styled-components"
           />

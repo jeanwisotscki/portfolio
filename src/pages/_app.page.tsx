@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import type { AppProps } from "next/app";
 
 import ThemeContextProvider from "../contexts/ThemeContext";
@@ -13,10 +14,15 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <ThemeContextProvider>
-      <GlobalStyle />
-      <Component {...pageProps} />
-    </ThemeContextProvider>
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <ThemeContextProvider>
+        <GlobalStyle />
+        <Component {...pageProps} />
+      </ThemeContextProvider>
+    </>
   );
 }
 

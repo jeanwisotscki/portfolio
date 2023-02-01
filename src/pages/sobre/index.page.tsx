@@ -1,12 +1,8 @@
 import React from "react";
 import Head from "next/head";
 
-import { Accordion } from "../../components/Accordion";
-import { PageTitle } from "../../components/PageTitle";
-import { LinkButton } from "../../components/LinkButton";
-import { LayoutBase } from "../../components/LayoutBase";
-
 import * as Atom from "./styles";
+import * as Comp from "../../components";
 
 const Sobre = () => {
   return (
@@ -14,8 +10,8 @@ const Sobre = () => {
       <Head>
         <title>Jean Wisotscki | Sobre</title>
       </Head>
-      <LayoutBase>
-        <PageTitle title="Sobre" borderColor="blue" />
+      <Comp.LayoutBase>
+        <Comp.PageTitle title="Sobre" borderColor="blue" />
 
         <Atom.TextContainer>
           <h2>Jean Wisotscki</h2>
@@ -27,13 +23,14 @@ const Sobre = () => {
           <p>
             Atualmente tenho focado os meus estudos na parte front-end, mais
             precisamente em{" "}
-            <LinkButton href="https://nextjs.org/" textContent="Next.js" />,{" "}
-            <LinkButton
+            <Comp.LinkButton href="https://nextjs.org/" textContent="Next.js" />
+            ,{" "}
+            <Comp.LinkButton
               href="https://www.typescriptlang.org/"
               textContent="TypeScript"
             />{" "}
             e{" "}
-            <LinkButton
+            <Comp.LinkButton
               href="https://styled-components.com/"
               textContent="Styled-components"
             />
@@ -43,7 +40,7 @@ const Sobre = () => {
         </Atom.TextContainer>
 
         <Atom.Container>
-          <Accordion />
+          <Comp.Accordion />
         </Atom.Container>
 
         <Atom.TextContainer>
@@ -55,7 +52,7 @@ const Sobre = () => {
             tempo sem estudar absolutamente nada sobre programação, mas em 2021
             eu resolvi voltar e tentar de novo. Após uma breve busca no youtube,
             encontrei o canal{" "}
-            <LinkButton
+            <Comp.LinkButton
               href="https://www.youtube.com/c/CursoemV%C3%ADdeo"
               textContent="Curso em Video"
             />{" "}
@@ -77,7 +74,7 @@ const Sobre = () => {
           <br />
           <p>
             Pouco tempo depois, adquiri os cursos da{" "}
-            <LinkButton
+            <Comp.LinkButton
               href="https://www.origamid.com/"
               textContent="Origamid"
             />{" "}
@@ -94,7 +91,10 @@ const Sobre = () => {
             desistir. Mas não por muito tempo, só até eu conseguir me organizar
             melhor com o trabalho. Perto do final de 2021 eu retornei aos
             estudos, e dessa vez focado em aprender{" "}
-            <LinkButton href="https://pt-br.reactjs.org/" textContent="React" />
+            <Comp.LinkButton
+              href="https://pt-br.reactjs.org/"
+              textContent="React"
+            />
             .
           </p>
           <br />
@@ -103,16 +103,16 @@ const Sobre = () => {
             nos estudos. Terminei o curso de <strong>React</strong>, comecei
             fazer os meus próprios projetos e a coloca-los no{" "}
             <strong>GitHub</strong>, iniciei os estudos no framework{" "}
-            <LinkButton href="https://nextjs.org/" textContent="Next.js" /> e
-            entendi um pouco mais sobre os conceitos de{" "}
+            <Comp.LinkButton href="https://nextjs.org/" textContent="Next.js" />{" "}
+            e entendi um pouco mais sobre os conceitos de{" "}
             <strong>SSR (Server Side Rendering)</strong>. Também comecei os
             estudos em{" "}
-            <LinkButton
+            <Comp.LinkButton
               href="https://www.typescriptlang.org/"
               textContent="TypeScript"
             />{" "}
             e{" "}
-            <LinkButton
+            <Comp.LinkButton
               href="https://styled-components.com/"
               textContent="Styled-components"
             />
@@ -123,7 +123,7 @@ const Sobre = () => {
             E por fim, cá estou eu, ansioso para podermos conversar mais. 😄
           </p>
         </Atom.TextContainer>
-      </LayoutBase>
+      </Comp.LayoutBase>
     </>
   );
 };

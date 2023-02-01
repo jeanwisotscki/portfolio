@@ -1,11 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 
-import { PageTitle } from "../../components/PageTitle";
-import { LayoutBase } from "../../components/LayoutBase";
-import { RedirectButton } from "../../components/RedirectButton";
-
 import * as Atom from "./styles";
+import * as Comp from "../../components";
 
 const Contato = () => {
   return (
@@ -13,14 +10,14 @@ const Contato = () => {
       <Head>
         <title>Jean Wisotscki | Contato</title>
       </Head>
-      <LayoutBase>
-        <PageTitle title="Contato" borderColor="red" />
+      <Comp.LayoutBase>
+        <Comp.PageTitle title="Contato" borderColor="red" />
         <Atom.SubTitle>
           Curtiu o meu trabalho ou quer conversar comigo?
         </Atom.SubTitle>
 
         <Atom.Container>
-          <RedirectButton
+          <Comp.RedirectButton
             href="https://www.linkedin.com/in/jean-wisotscki/"
             color="red"
             icon={
@@ -33,9 +30,9 @@ const Contato = () => {
             }
           >
             linkedin
-          </RedirectButton>
+          </Comp.RedirectButton>
 
-          <RedirectButton
+          <Comp.RedirectButton
             href="https://github.com/jeanwisotscki/"
             color="red"
             icon={
@@ -48,9 +45,9 @@ const Contato = () => {
             }
           >
             github
-          </RedirectButton>
+          </Comp.RedirectButton>
         </Atom.Container>
-      </LayoutBase>
+      </Comp.LayoutBase>
     </>
   );
 };
